@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Question:</b>
+  <%= @poll.question %>
+</p>
+
+<p>
+  <b>Yeses:</b>
+  <%= @poll.yeses %>
+</p>
+
+<p>
+  <b>Nos:</b>
+  <%= @poll.nos %>
+</p>
+
+
+<%= link_to 'Edit', edit_poll_path(@poll) %> |
+<%= link_to 'Back', polls_path %>
