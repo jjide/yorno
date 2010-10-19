@@ -36,6 +36,19 @@ class PollsController < ApplicationController
     end
   end
 
+  # GET /polls/admin
+  def admin
+    max_id = cookies[:max_id]
+    max_id = max_id.nil? ? 0 : Integer(max_id)
+
+    @answer_me = Poll.where("id > ?", max_id).first
+    @polls = Poll.all
+
+    respond_to do |format|
+      format.html # index.html.erb
+    end
+  end
+
   # GET /polls/1
   # GET /polls/1.xml
   def show

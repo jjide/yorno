@@ -14,6 +14,7 @@ Yorn::Application.routes.draw do
   #trying to get voting to work
    match 'polls/:id/vote_yes' => 'polls#vote_yes', :as => :vote_yes
    match 'polls/:id/vote_no' => 'polls#vote_no', :as => :vote_no
+   match 'admin' => 'polls#admin', :as => :admin
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
