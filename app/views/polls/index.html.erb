@@ -1,53 +1,57 @@
 <div class="new-question">
-  <% if @answer_me.nil? %>
-      No more questions for you to answer
-  <% else %>
-      <h2>Question:</h2>
+	<% if @answer_me.nil? %>
+		No more questions for you to answer
+	<% else %>
+		<h2>Question:</h2>
 
-      <h1><%= @answer_me.question %></h1>
-      <td>
-        <%= link_to image_tag("yes.png", :border => 0), vote_yes_url(:id => @answer_me.id) %>
-        <%= link_to image_tag("no.png", :border => 0), vote_no_url(:id => @answer_me.id) %>
-      </td>
-  <% end %>
+		<h1><%= @answer_me.question %></h1>
+		<h4><%= @category.name%></h4>
+		<td>
+			<%= link_to image_tag("yes.png", :border => 0), vote_yes_url(:id => @answer_me.id) %>
+			<%= link_to image_tag("no.png", :border => 0), vote_no_url(:id => @answer_me.id) %>
+		</td>
+	<% end %>
 </div>
 
 <h2>Polls you've already answered</h2>
 
 <table id="question-table">
-  <tr>
-    <th>Question</th>
-    <th>Totals</th>
-  </tr>
+	<tr>
+		<th>Question</th>
+		<th>Totals</th>
+	</tr>
 
-  <% first = true %>
-  <% @polls.each do |poll| %>
+	<% first = true %>
+	<% @polls.each do |poll| %>
 
-      <tr>
-        <td class="question"><%= poll.question %></td>
+		<tr>
+			<td class="question">
+				<%= poll.question %><br>
+				<%= Category.find(poll.category_id ).name%>
+			</td>
 
-        <td>
-          <% total = poll.yeses + poll.nos %>
-          <% if total > 0 %>
-              <% yes_percentage = (poll.yeses * 100.0) / (total * 1.0)
-                 no_percentage = (poll.nos * 100.0) / (total * 1.0) %>
-              <table width="385px">
-                <caption><%= total %> Votes Tallied</caption>
-                <tr>
-                  <th>Yes%</th>
-                  <th>No%</th>
-                </tr>
-                <tr>
-                  <td class="yes_percentage" width="<%= yes_percentage %>%"><%= number_to_percentage(yes_percentage, :precision => 0) %></td>
-                  <td class="no_percentage" width="<%= no_percentage %>%"><%= number_to_percentage(no_percentage, :precision => 0) %></td>
-                </tr>
-              </table>
-          <% else %>
-              0 votes so far
-          <% end %>
-        </td>
-      </tr>
-  <% end %>
+			<td>
+				<% total = poll.yeses + poll.nos %>
+				<% if total > 0 %>
+					<% yes_percentage = (poll.yeses * 100.0) / (total * 1.0)
+					   no_percentage = (poll.nos * 100.0) / (total * 1.0) %>
+					<table width="385px">
+						<caption><%= total %> Votes Tallied</caption>
+						<tr>
+							<th>Yes%</th>
+							<th>No%</th>
+						</tr>
+						<tr>
+							<td class="yes_percentage" width="<%= yes_percentage %>%"><%= number_to_percentage(yes_percentage, :precision => 0) %></td>
+							<td class="no_percentage" width="<%= no_percentage %>%"><%= number_to_percentage(no_percentage, :precision => 0) %></td>
+						</tr>
+					</table>
+				<% else %>
+					0 votes so far
+				<% end %>
+			</td>
+		</tr>
+	<% end %>
 </table>
 
 <br/>

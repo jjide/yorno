@@ -15,6 +15,7 @@ Yorn::Application.routes.draw do
    match 'polls/:id/vote_yes' => 'polls#vote_yes', :as => :vote_yes
    match 'polls/:id/vote_no' => 'polls#vote_no', :as => :vote_no
    match 'admin' => 'polls#admin', :as => :admin
+   match 'upload' => 'polls#upload', :as => :upload
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
