@@ -78,7 +78,7 @@ class PollsController < ApplicationController
 
 	# GET /polls/1/edit
 	def edit
-		@poll = Poll.find(params[:id])
+		flash[:error] = "Nice try. No Editing allowed"
 	end
 
 	# POST /polls
@@ -91,6 +91,7 @@ class PollsController < ApplicationController
 
 		respond_to do |format|
 			if @poll.save
+				flash[:new_id ] = @poll.id				
 				format.html { redirect_to :action=> "index" }
 				format.xml { render :xml => @poll, :status => :created, :location => @poll }
 			else
@@ -103,17 +104,18 @@ class PollsController < ApplicationController
 	# PUT /polls/1
 	# PUT /polls/1.xml
 	def update
-		@poll = Poll.find(params[:id])
-
-		respond_to do |format|
-			if @poll.update_attributes(params[:poll])
-				format.html { redirect_to(@poll, :notice => 'Poll was successfully updated.') }
-				format.xml { head :ok }
-			else
-				format.html { render :action => "edit" }
-				format.xml { render :xml => @poll.errors, :status => :unprocessable_entity }
-			end
-		end
+		flash[:error] = "Nice try. No updating allowed."
+#		@poll = Poll.find(params[:id])
+#
+#		respond_to do |format|
+#			if @poll.update_attributes(params[:poll])
+#				format.html { redirect_to(@poll, :notice => 'Poll was successfully updated.') }
+#				format.xml { head :ok }
+#			else
+#				format.html { render :action => "edit" }
+#				format.xml { render :xml => @poll.errors, :status => :unprocessable_entity }
+#			end
+#		end
 	end
 
 	# DELETE /polls/1

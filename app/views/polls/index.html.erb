@@ -1,3 +1,10 @@
+<% if flash[:new_id] %>
+	<div>
+		You just created a new poll! To follow the voting on your poll, go to
+		<a href="http://sharp-sunset-59.heroku.com/polls/<%= flash[:new_id] %>">http://sharp-sunset-59.heroku.com/polls/<%= flash[:new_id] %></a>
+	</div>
+<% end -%>
+
 <div class="new-question">
 	<% if @answer_me.nil? %>
 		No more questions for you to answer
@@ -12,6 +19,7 @@
 		</td>
 	<% end %>
 </div>
+<%= link_to 'New Poll', new_poll_path %>
 
 <h2>Polls you've already answered</h2>
 
