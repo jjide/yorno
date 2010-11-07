@@ -27,7 +27,7 @@ class PollsController < ApplicationController
 		max_id = cookies[:max_id]
 		max_id = max_id.nil? ? 0 : Integer(max_id)
 
-		@answer_me = Poll.where("id > ?", max_id).first
+		@answer_me = Poll.where("id > ?", max_id).order("id asc").first
 		if @answer_me 			
 			@category = Category.where("id = ?", @answer_me.category_id).first
 		end
