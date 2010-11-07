@@ -33,6 +33,9 @@ class PollsController < ApplicationController
 		end
 		@polls = Poll.where("id <= ?", max_id)
 
+		@poll = Poll.new
+		@categories = Category.find :all
+		
 		respond_to do |format|
 			format.html # index.html.erb
 			format.xml { render :xml => @polls }
@@ -93,10 +96,10 @@ class PollsController < ApplicationController
 			if @poll.save
 				flash[:new_id ] = @poll.id				
 				format.html { redirect_to :action=> "index" }
-				format.xml { render :xml => @poll, :status => :created, :location => @poll }
+				format.js
 			else
 				format.html { render :action => "new" }
-				format.xml { render :xml => @poll.errors, :status => :unprocessable_entity }
+				format.js
 			end
 		end
 	end

@@ -1,9 +1,9 @@
-<% if flash[:new_id] %>
-	<div>
-		You just created a new poll! To follow the voting on your poll, go to
-		<a href="http://sharp-sunset-59.heroku.com/polls/<%= flash[:new_id] %>">http://sharp-sunset-59.heroku.com/polls/<%= flash[:new_id] %></a>
-	</div>
-<% end -%>
+<div id="new_poll">
+  <% if flash[:new_id] %>
+      You just created a new poll! To follow the voting on your poll, go to
+      <a href="http://sharp-sunset-59.heroku.com/polls/<%= flash[:new_id] %>">http://sharp-sunset-59.heroku.com/polls/<%= flash[:new_id] %></a>
+  <% end -%>
+</div>
 
 <div class="new-question">
 	<% if @answer_me.nil? %>
@@ -19,7 +19,60 @@
 		</td>
 	<% end %>
 </div>
-<%= link_to 'New Poll', new_poll_path %>
+
+<script>
+    Event.observe(window, 'load', function() {
+        Event.observe('newQuestionLink', 'click', clickNewQuestionLink);
+        handleNewQuestionLink = showNewQuestion;
+    });
+
+    function clickNewQuestionLink(){
+        handleNewQuestionLink();
+    }
+
+    function hideNewQuestion(){
+        $('newDiv').className = 'hideMe';
+        $('newQuestionLink').innerHTML='Ask a question...';
+        handleNewQuestionLink = showNewQuestion;
+    }
+
+	function showNewQuestion(){
+		$('newDiv').className = 'newQuestion';
+        $('newQuestionLink').innerHTML='Hide';
+        handleNewQuestionLink = hideNewQuestion;
+        $('poll_question').focus();
+	}
+</script>
+<a id="newQuestionLink">Ask a question...</a>
+<div id="newDiv" class="hideMe">
+<%= form_for @poll, :html => {:id => 'new_poll_form'}, :remote => true do |f| %>
+  <% if @poll.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@poll.errors.count, "error") %> prohibited this poll from being saved:</h2>
+
+      <ul>
+      <% @poll.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :question %><br />
+    <%= f.text_area :question %><br />
+	<%= f.label :category %><br />
+	<%= select_tag "category_id", options_from_collection_for_select(@categories, "id", "name") %>
+
+
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+</div>
+
+
 
 <h2>Polls you've already answered</h2>
 

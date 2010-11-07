@@ -1,0 +1,6 @@
+page.replace_html :new_poll, "You just created a new poll! To follow the voting on your poll, go to
+      <a href='http://sharp-sunset-59.heroku.com/polls/#{flash[:new_id] }'>http://sharp-sunset-59.heroku.com/polls/#{flash[:new_id] }</a>"
+page[:new_poll].visual_effect :highlight
+page[:new_poll_form].reset
+flash.discard
+page[:poll_question].focus
