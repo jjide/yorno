@@ -6,7 +6,7 @@ body {
 body, p, ol, ul, td {
     font-family: verdana, arial, helvetica, sans-serif;
     font-size: 13px;
-    line-height: 18px;
+    /*line-height: 18px;*/
 }
 
 pre {
@@ -67,18 +67,10 @@ div.field, div.actions {
     list-style: square;
 }
 
-.yes_percentage {
-    background-color: green;
-}
-
-.no_percentage {
-    background-color: red;
-}
-
-table#question-table td {
-    vertical-align: bottom;
-    padding: 12px;
-}
+/*table#question-table td {*/
+    /*vertical-align: bottom;*/
+    /*padding: 12px;*/
+/*}*/
 
 div.new-question {
     text-align: center;
@@ -105,4 +97,52 @@ div.new-question {
 h1 {
     line-height:1.1em;
     font-size:2em;
+}
+
+.yes_percentage_number{
+    float:left;
+}
+
+.no_percentage_number {
+    float:right;
+}
+
+.total{
+    text-align:center;
+}
+
+table {
+}
+
+#answered li {
+    margin-bottom: 3em;
+    width:600px;
+}
+td.no_background {
+    width:385px;
+    background-color: red;
+    margin:0;
+    padding:0;
+}
+
+td.no_background div {
+    background-color:green;
+    color:white;
+    height:34px;
+}
+
+.percentage_number{
+    width: 8em;
+}
+
+.yes_number{
+    color:green;
+    font-weight:bold;
+    text-align:right
+}
+
+.no_number {
+    color:red;
+    font-weight:bold;
+    text-align:left;
 }
