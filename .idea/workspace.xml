@@ -40,10 +40,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/polls/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="20" selection-start="2470" selection-end="2470" vertical-scroll-proportion="-54.375">
+            <state line="102" column="22" selection-start="3001" selection-end="3001" vertical-scroll-proportion="0.6181047">
               <folding />
             </state>
           </provider>
@@ -76,10 +76,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="polls_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="polls_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/polls_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="59" selection-start="667" selection-end="667" vertical-scroll-proportion="0.59507525">
+            <state line="9" column="0" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -158,8 +158,8 @@
         <option value="$PROJECT_DIR$/app/views/polls/create.rjs" />
         <option value="$PROJECT_DIR$/public/graphs.html" />
         <option value="$PROJECT_DIR$/public/stylesheets/scaffold.css" />
-        <option value="$PROJECT_DIR$/app/views/polls/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/polls_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/polls/index.html.erb" />
       </list>
     </option>
   </component>
@@ -747,16 +747,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/polls/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/polls_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="20" selection-start="2470" selection-end="2470" vertical-scroll-proportion="-54.375">
+        <state line="9" column="0" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/polls_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/polls/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="59" selection-start="667" selection-end="667" vertical-scroll-proportion="0.59507525">
+        <state line="102" column="22" selection-start="3001" selection-end="3001" vertical-scroll-proportion="0.6181047">
           <folding />
         </state>
       </provider>

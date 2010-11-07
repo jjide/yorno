@@ -98,6 +98,9 @@
                  no_percentage = (poll.nos * 100.0) / (total * 1.0) %>
 
               <table cellpadding="0" cellspacing="0">
+                <% if total > 20 %>
+                <caption><%= total %> votes</caption>
+                <% end %>
                 <tr>
                   <td class="percentage_number"><span class="yes_number"><%= number_to_percentage(yes_percentage, :precision => 0) %></span></td>
                   <td class="no_background">
