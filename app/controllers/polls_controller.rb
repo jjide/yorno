@@ -31,16 +31,20 @@ class PollsController < ApplicationController
 		if @answer_me 			
 			@category = Category.where("id = ?", @answer_me.category_id).first
 		end
-		@polls = Poll.where("id <= ?", max_id)
 
 		@poll = Poll.new
 		@categories = Category.find :all
 		
 		respond_to do |format|
 			format.html # index.html.erb
-			format.xml { render :xml => @polls }
 		end
 	end
+
+  def already_voted
+    max_id = cookies[:max_id]
+    max_id = max_id.nil? ? 0 : Integer(max_id)
+    @polls = Poll.where("id <= ?", max_id)
+  end
 
 	# GET /polls/admin
 	def admin
@@ -48,22 +52,10 @@ class PollsController < ApplicationController
 		max_id = max_id.nil? ? 0 : Integer(max_id)
 
 		@answer_me = Poll.where("id > ?", max_id).first
-		@polls = Poll.all
+		@polls = Poll.order("id asc").all
 
 		respond_to do |format|
 			format.html # index.html.erb
-		end
-	end
-
-	# GET /polls/1
-	# GET /polls/1.xml
-	def show
-		@poll = Poll.find(params[:id])
-		@category = Category.find(@poll.category_id)
-
-		respond_to do |format|
-			format.html # show.html.erb
-			format.xml { render :xml => @poll }
 		end
 	end
 
@@ -108,17 +100,6 @@ class PollsController < ApplicationController
 	# PUT /polls/1.xml
 	def update
 		flash[:error] = "Nice try. No updating allowed."
-#		@poll = Poll.find(params[:id])
-#
-#		respond_to do |format|
-#			if @poll.update_attributes(params[:poll])
-#				format.html { redirect_to(@poll, :notice => 'Poll was successfully updated.') }
-#				format.xml { head :ok }
-#			else
-#				format.html { render :action => "edit" }
-#				format.xml { render :xml => @poll.errors, :status => :unprocessable_entity }
-#			end
-#		end
 	end
 
 	# DELETE /polls/1

@@ -21,30 +21,25 @@
 </div>
 
 <script>
-    Event.observe(window, 'load', function() {
-        Event.observe('newQuestionLink', 'click', clickNewQuestionLink);
-        handleNewQuestionLink = showNewQuestion;
-    });
 
-    function clickNewQuestionLink() {
-        handleNewQuestionLink();
-    }
+
+$(document).ready(function() {
+    $('#newQuestionLink').toggle(showNewQuestion, hideNewQuestion)
+});
 
     function hideNewQuestion() {
-        $('newDiv').className = 'hideMe';
-        $('newQuestionLink').innerHTML = 'Ask a question...';
-        handleNewQuestionLink = showNewQuestion;
+        $('#newQuestionLink').html('Ask a question...');
+        $('#newDiv').toggle();
     }
 
     function showNewQuestion() {
-        $('newDiv').className = 'newQuestion';
-        $('newQuestionLink').innerHTML = 'Hide';
-        handleNewQuestionLink = hideNewQuestion;
-        $('poll_question').focus();
+        $('#newQuestionLink').html('Hide');
+        $('#newDiv').toggle();
+        $('#poll_question').focus();
     }
 </script>
 <a id="newQuestionLink">Ask a question...</a>
-<div id="newDiv" class="hideMe">
+<div id="newDiv" class="hideMe newQuestion">
   <%= form_for @poll, :html => {:id => 'new_poll_form'}, :remote => true do |f| %>
       <% if @poll.errors.any? %>
           <div id="error_explanation">
@@ -76,43 +71,6 @@
 </div>
 
 
-
-<h2>Polls you've already answered</h2>
-
-
-<ul id="answered">
-  <% first = true %>
-  <% @polls.each do |poll| %>
-
-      <li>
-        <span class="question">
-          <%= poll.question %>
-          &mdash;
-          <%= Category.find(poll.category_id).name %>
-        </span>
-
-        <span>
-          <% total = poll.yeses + poll.nos %>
-          <% if total > 0 %>
-              <% yes_percentage = (poll.yeses * 100.0) / (total * 1.0)
-                 no_percentage = (poll.nos * 100.0) / (total * 1.0) %>
-
-              <table cellpadding="0" cellspacing="0">
-                <% if total > 20 %>
-                <caption><%= total %> votes</caption>
-                <% end %>
-                <tr>
-                  <td class="percentage_number"><span class="yes_number"><%= number_to_percentage(yes_percentage, :precision => 0) %></span></td>
-                  <td class="no_background">
-                    <div style="width: <%= yes_percentage %>%"></div>
-                  </td>
-                  <td class="percentage_number"><span class="no_number"><%= number_to_percentage(no_percentage, :precision => 0) %></span></td>
-                </tr>
-              </table>
-          <% else %>
-              0 votes so far
-          <% end %>
-        </span>
-      </li>
-  <% end %>
-</ul>
+<div>
+<%= link_to "Polls you've already answered", already_voted_url %>
+</div>
