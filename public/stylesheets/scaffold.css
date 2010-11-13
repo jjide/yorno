@@ -148,6 +148,13 @@ td.no_background div {
     text-align:left;
 }
 
-a#newQuestionLink{text-decoration:underline;}
-
 div#vote_buttons{margin-bottom:100px;}
+
+div.footer{
+    background-color:darkgray;
+    color:lightgray;
+}
+
+div.placeholder{
+    border:solid 1px white;;
+}

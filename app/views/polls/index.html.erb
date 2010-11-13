@@ -1,12 +1,12 @@
 <script type="text/javascript">
     $(document).ready(function() {
-        $("#question").show("slide", { direction: "right" }, 800);
+        $("#question").show("slide", { direction: "right" });
 
         $("a.vote_button").click(function(event) {
             event.preventDefault();
             var $self=$(this);
             
-            $("#question").hide("slide", { direction: "left" }, 800,
+            $("#question").hide("slide", { direction: "left" },
                                function() {
                                    document.location = $self.attr('href');
                                });

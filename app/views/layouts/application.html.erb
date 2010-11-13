@@ -10,10 +10,25 @@
       .grid_1, .grid_2, .grid_3, .grid_6, .grid_10, .grid_11, .grid_12 {
           border: solid 1px silver;
       }
-  </style>
+
+      .ui-button-text-only {
+          margin:15px;
+          width:100px;
+          font-size:2em !important;
+      }
+  </style>  
   <script>
       $(document).ready(function() {
           $('#newQuestionLink').click(showNewQuestion)
+      });
+
+      $(document).ready(function() {
+          $('#voteLink').click(function(){document.location="/polls";});
+      });
+
+      $(document).ready(function() {
+          $('#viewLink').click(function(){document.location="<%= already_voted_url%>";});
+
       });
 
       function hideNewQuestion() {
@@ -22,23 +37,21 @@
       }
 
       function showNewQuestion() {
-          $('#question').hide();
-          $('#newDiv').show();
+          $('#question').hide("slide", { direction: "right" },
+              function() {$('#newDiv').show("slide", { direction: "up" });});
           $('#poll_question').focus();
       }
   </script>
 </head>
 <body>
 <div class="container_12">
-  <div class="grid_2">
-    <ul>
-      <li><a id="newQuestionLink">Ask</a></li>
-      <li><a id="voteLink" href="/polls">Vote</a></li>
-      <li><%= link_to "View", already_voted_url %></li>
-    </ul>
+  <div class="grid_2  ui-widget-content ui-widget ui-corner-all">
+    <button id="newQuestionLink" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Ask</span></button>
+    <button id="voteLink" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Vote</span></button>
+    <button id="viewLink" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">View</span></button>
   </div>
 
-  <div class="grid_6">
+  <div class="grid_6  ui-corner-all">
     <div id="new_poll">
       <% if flash[:new_id] %>
           You just created a new poll! To follow the voting on your poll, go to
@@ -79,7 +92,7 @@
     <%= yield %>
   </div>
 
-  <div class="grid_2">
+  <div class="grid_2  ui-corner-all">
     <ul>
       <li>ad 1</li>
       <li>ad 2</li>
@@ -87,7 +100,6 @@
       <li>ad 4</li>
     </ul>
   </div>
-
 </div>
 
 

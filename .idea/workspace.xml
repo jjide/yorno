@@ -7,6 +7,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/polls_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/polls_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/polls/index.html.erb" afterPath="$PROJECT_DIR$/app/views/polls/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/jquery-ui-1.8.6.custom.min.js" afterPath="$PROJECT_DIR$/public/javascripts/jquery-ui-1.8.6.custom.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/960.css" afterPath="$PROJECT_DIR$/public/stylesheets/960.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/scaffold.css" afterPath="$PROJECT_DIR$/public/stylesheets/scaffold.css" />
     </list>
     <ignored path=".idea/workspace.xml" />
@@ -36,7 +38,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/polls/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="65" selection-start="331" selection-end="331" vertical-scroll-proportion="-5.230769">
+            <state line="2" column="61" selection-start="90" selection-end="128" vertical-scroll-proportion="-1.3076923">
               <folding />
             </state>
           </provider>
@@ -54,7 +56,25 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="0" selection-start="2402" selection-end="2402" vertical-scroll-proportion="1.5994236">
+            <state line="47" column="21" selection-start="1203" selection-end="1203" vertical-scroll-proportion="0.44954127">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="960.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/stylesheets/960.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="270" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery-ui-1.8.6.custom.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/stylesheets/jquery-ui-1.8.6.custom.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="83" column="124" selection-start="6008" selection-end="6008" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -63,7 +83,7 @@
       <file leaf-file-name="scaffold.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/scaffold.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="153" column="0" selection-start="2124" selection-end="2124" vertical-scroll-proportion="0.0">
+            <state line="149" column="0" selection-start="2037" selection-end="2037" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -105,15 +125,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rendering.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.2-p0@rails300/gems/actionpack-3.0.0/lib/action_view/render/rendering.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="8" selection-start="777" selection-end="777" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -148,8 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/ajax_controller.rb" />
-        <option value="$PROJECT_DIR$/public/graphs.html" />
         <option value="$PROJECT_DIR$/app/views/polls/already-voted.html" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/public/javascripts/jquery.js" />
@@ -159,11 +168,13 @@
         <option value="$PROJECT_DIR$/app/views/polls/create.js.erb" />
         <option value="$PROJECT_DIR$/app/views/polls/admin.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/polls_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/polls/already_voted.html.erb" />
         <option value="$PROJECT_DIR$/app/views/polls/_answered_poll.html.erb" />
-        <option value="$PROJECT_DIR$/public/stylesheets/scaffold.css" />
+        <option value="$PROJECT_DIR$/public/stylesheets/960.css" />
+        <option value="$PROJECT_DIR$/public/stylesheets/jquery-ui-1.8.6.custom.css" />
         <option value="$PROJECT_DIR$/app/views/polls/index.html.erb" />
+        <option value="$PROJECT_DIR$/public/stylesheets/scaffold.css" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       </list>
     </option>
   </component>
@@ -246,21 +257,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yorn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yorn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="javascripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -708,13 +705,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/javascripts/rails.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="2" selection-start="699" selection-end="699" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="73" selection-start="1684" selection-end="1684" vertical-scroll-proportion="0.6771546">
@@ -785,13 +775,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/scaffold.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="153" column="0" selection-start="2124" selection-end="2124" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="58" column="88" selection-start="22883" selection-end="22883" vertical-scroll-proportion="0.33286908">
@@ -799,16 +782,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/960.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="270" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/jquery-ui-1.8.6.custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="124" selection-start="6008" selection-end="6008" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/polls/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="65" selection-start="331" selection-end="331" vertical-scroll-proportion="-5.230769">
+        <state line="2" column="61" selection-start="90" selection-end="128" vertical-scroll-proportion="-1.3076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/scaffold.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="149" column="0" selection-start="2037" selection-end="2037" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="0" selection-start="2402" selection-end="2402" vertical-scroll-proportion="1.5994236">
+        <state line="47" column="21" selection-start="1203" selection-end="1203" vertical-scroll-proportion="0.44954127">
           <folding />
         </state>
       </provider>
