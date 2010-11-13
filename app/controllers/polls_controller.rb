@@ -4,11 +4,12 @@ class PollsController < ApplicationController
 		@poll = Poll.find(params[:id])
 		@poll.yeses += 1
 		@poll.save
-
 		cookies[:max_id] = @poll.id
+    flash[:just_voted] = @poll
+
 		respond_to do |format|
 			format.html { redirect_to(polls_url, :notice => 'Thank you for voting.') }
-		end
+    end
 	end
 
 	def vote_no
@@ -16,6 +17,8 @@ class PollsController < ApplicationController
 		@poll.nos += 1
 		@poll.save
 		cookies[:max_id] = @poll.id
+    flash[:just_voted] = @poll
+
 		respond_to do |format|
 			format.html { redirect_to(polls_url, :notice => 'Thank you for voting.') }
 		end
@@ -44,6 +47,8 @@ class PollsController < ApplicationController
     max_id = cookies[:max_id]
     max_id = max_id.nil? ? 0 : Integer(max_id)
     @polls = Poll.where("id <= ?", max_id)
+    @poll = Poll.new
+    @categories = Category.find :all
   end
 
 	# GET /polls/admin

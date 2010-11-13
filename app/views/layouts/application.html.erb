@@ -3,12 +3,93 @@
 <head>
   <title>Yorn</title>
   <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :all%>
+  <%= javascript_include_tag :all %>
   <%= csrf_meta_tag %>
+  <style type="text/css">
+
+      .grid_1, .grid_2, .grid_3, .grid_6, .grid_10, .grid_11, .grid_12 {
+          border: solid 1px silver;
+      }
+  </style>
+  <script>
+      $(document).ready(function() {
+          $('#newQuestionLink').click(showNewQuestion)
+      });
+
+      function hideNewQuestion() {
+          $('#newDiv').hide();
+          $('#question').show();
+      }
+
+      function showNewQuestion() {
+          $('#question').hide();
+          $('#newDiv').show();
+          $('#poll_question').focus();
+      }
+  </script>
 </head>
 <body>
+<div class="container_12">
+  <div class="grid_2">
+    <ul>
+      <li><a id="newQuestionLink">Ask</a></li>
+      <li><a id="voteLink" href="/polls">Vote</a></li>
+      <li><%= link_to "View", already_voted_url %></li>
+    </ul>
+  </div>
 
-<%= yield %>
+  <div class="grid_6">
+    <div id="new_poll">
+      <% if flash[:new_id] %>
+          You just created a new poll! To follow the voting on your poll, go to
+          <a href="http://sharp-sunset-59.heroku.com/polls/<%= flash[:new_id] %>">http://sharp-sunset-59.heroku.com/polls/<%= flash[:new_id] %></a>
+      <% end -%>
+    </div>
+    <div id="newDiv" class="hideMe newQuestion">
+      <%= form_for @poll, :html => {:id => 'new_poll_form'}, :remote => true do |f| %>
+          <% if @poll.errors.any? %>
+              <div id="error_explanation">
+                <h2><%= pluralize(@poll.errors.count, "error") %> prohibited this poll from being saved:</h2>
+
+                <ul>
+                  <% @poll.errors.full_messages.each do |msg| %>
+                      <li><%= msg %></li>
+                  <% end %>
+                </ul>
+              </div>
+          <% end %>
+
+          <div class="field">
+            <%= f.label :question %>
+            <br/>
+            <%= f.text_area :question %>
+            <br/>
+            <%= f.label :category %>
+            <br/>
+            <%= select_tag "category_id", options_from_collection_for_select(@categories, "id", "name") %>
+
+
+          </div>
+          <div class="actions">
+            <%= f.submit %>
+          </div>
+      <% end %>
+    </div>
+
+    <%= yield %>
+  </div>
+
+  <div class="grid_2">
+    <ul>
+      <li>ad 1</li>
+      <li>ad 2</li>
+      <li>ad 3</li>
+      <li>ad 4</li>
+    </ul>
+  </div>
+
+</div>
+
 
 </body>
 </html>

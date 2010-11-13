@@ -72,7 +72,7 @@ div.field, div.actions {
     /*padding: 12px;*/
 /*}*/
 
-div.new-question {
+div#question {
     text-align: center;
     padding-bottom: 48px;
 }
@@ -82,7 +82,7 @@ div.new-question {
 }
 
 #newDiv textarea {
-    width: 600px;
+    width: 400px;
     height: 120px;
     border: 3px solid #cccccc;
     padding: 5px;
@@ -116,19 +116,20 @@ table {
 
 #answered li {
     margin-bottom: 3em;
-    width:600px;
+    width:400px;
 }
 td.no_background {
     width:385px;
     background-color: red;
     margin:0;
     padding:0;
+    height:36px;
 }
 
 td.no_background div {
     background-color:green;
     color:white;
-    height:34px;
+    height:100%;
 }
 
 .percentage_number{
@@ -138,7 +139,7 @@ td.no_background div {
 .yes_number{
     color:green;
     font-weight:bold;
-    text-align:right
+    text-align:right;
 }
 
 .no_number {
@@ -146,3 +147,7 @@ td.no_background div {
     font-weight:bold;
     text-align:left;
 }
+
+a#newQuestionLink{text-decoration:underline;}
+
+div#vote_buttons{margin-bottom:100px;}
