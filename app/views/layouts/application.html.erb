@@ -8,7 +8,8 @@
   <style type="text/css">
 
       .grid_1, .grid_2, .grid_3, .grid_6, .grid_10, .grid_11, .grid_12 {
-          border: solid 1px silver;
+          border: solid 2px darkgray;
+          background-color:white;
       }
 
       .ui-button-text-only {
@@ -16,7 +17,26 @@
           width:100px;
           font-size:2em !important;
       }
-  </style>  
+
+      .ui-widget-content button{
+          float:right;
+          margin-right:0;
+      }
+      .ui-widget-content button span{
+          float:right;
+          margin:0;
+          padding:0;
+      }
+
+      .ui-widget-content{
+          padding:0;
+      }
+
+      div#question {
+          min-height:500px;
+      }
+
+  </style>
   <script>
       $(document).ready(function() {
           $('#newQuestionLink').click(showNewQuestion)
@@ -63,10 +83,10 @@
 </head>
 <body>
 <div class="container_12">
-  <div class="grid_2  ui-widget-content ui-widget ui-corner-all">
-    <button id="newQuestionLink" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Ask</span></button>
-    <button id="voteLink" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Vote</span></button>
-    <button id="viewLink" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">View</span></button>
+  <div class="grid_2 ui-widget-content ui-widget ui-corner-all">
+    <button id="newQuestionLink" class="ui-button ui-widget ui-state-default ui-corner-left ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Ask</span></button>
+    <button id="voteLink" class="ui-button ui-widget ui-state-default ui-corner-left ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Vote</span></button>
+    <button id="viewLink" class="ui-button ui-widget ui-state-default ui-corner-left ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">View</span></button>
   </div>
 
   <div class="grid_6  ui-corner-all">

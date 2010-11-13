@@ -158,3 +158,7 @@ div.footer{
 div.placeholder{
     border:solid 1px white;;
 }
+
+body {
+    background: #aaaaaa url(/images/html_bg.png)repeat-x;  }
+}
