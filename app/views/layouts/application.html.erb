@@ -37,11 +37,29 @@
       }
 
       function showNewQuestion() {
-          $('#question').hide("slide", { direction: "right" },
-              function() {$('#newDiv').show("slide", { direction: "up" });});
+          if($('#question').size() > 0) {
+              $('#question').hide("slide", { direction: "right" },
+                  function() {$('#newDiv').show("slide", { direction: "up" });});
+          } else {
+              $('#newDiv').show("slide", { direction: "up" });
+          }
           $('#poll_question').focus();
       }
-  </script>
+
+      $(document).ready(function() {
+          $("#question").show("slide", { direction: "right" });
+
+          $("a.vote_button").click(function(event) {
+              event.preventDefault();
+              var $self=$(this);
+
+              $("#question").hide("slide", { direction: "left" },
+                                 function() {
+                                     document.location = $self.attr('href');
+                                 });
+          });
+      })
+      </script>
 </head>
 <body>
 <div class="container_12">

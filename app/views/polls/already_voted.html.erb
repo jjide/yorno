@@ -1,5 +1,4 @@
 <ul id="answered">
-  <% first = true %>
   <% @polls.each do |poll| %>
     <li>
     <%= render :partial => "answered_poll", :locals => { :poll => poll }%>
