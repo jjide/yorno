@@ -1,10 +1,12 @@
 body {
     background-color: #fff;
     color: #333;
+    margin:0;
 }
 
 body, p, ol, ul, td {
-    font-family: verdana, arial, helvetica, sans-serif;
+    font-family: verdana, arial,
+    helvetica, sans-serif;
     font-size: 13px;
     /*line-height: 18px;*/
 }
@@ -15,8 +17,8 @@ pre {
     font-size: 11px;
 }
 
-a {
-    color: #000;
+a.ui-state-default {
+    color: #666;
 }
 
 a:visited {
@@ -150,15 +152,11 @@ td.no_background div {
 
 div#vote_buttons{margin-bottom:100px;}
 
-div.footer{
-    background-color:darkgray;
-    color:lightgray;
-}
 
-div.placeholder{
-    border:solid 1px white;;
-}
-
-body {
-    background: #aaaaaa url(/images/html_bg.png)repeat-x;  }
+div#header{
+    width:100%;
+    text-align:left;
+    border-bottom:solid 8px black;
+    margin-bottom:20px;
+    padding:0;
 }

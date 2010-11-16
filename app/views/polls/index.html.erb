@@ -8,8 +8,8 @@
       <h4><%= @category.name %></h4>
 
       <div id="vote_buttons">
-        <%= link_to image_tag("yes.png", :border => 0), vote_yes_url(:id => @answer_me.id), :class=>"vote_button" %>
-        <%= link_to image_tag("no.png", :border => 0), vote_no_url(:id => @answer_me.id), :class=>"vote_button" %>
+        <%= link_to "YES", vote_yes_url(:id => @answer_me.id), :class=>"vote_button" %>
+        <%= link_to "NO", vote_no_url(:id => @answer_me.id), :class=>"vote_button" %>
       </div>
 
       <% unless flash[:just_voted].nil? %>

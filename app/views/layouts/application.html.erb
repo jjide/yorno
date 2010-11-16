@@ -8,58 +8,53 @@
   <style type="text/css">
 
       .grid_1, .grid_2, .grid_3, .grid_6, .grid_10, .grid_11, .grid_12 {
-          border: solid 2px darkgray;
-          background-color:white;
+          /*border: solid 2px darkgray;*/
+          background-color: white;
+      }
+
+      .container_12{
+          float: left;
+          margin-left:25px;
       }
 
       .ui-button-text-only {
-          margin:15px;
-          width:100px;
-          font-size:2em !important;
-      }
-
-      .ui-widget-content button{
-          float:right;
-          margin-right:0;
-      }
-      .ui-widget-content button span{
-          float:right;
-          margin:0;
-          padding:0;
-      }
-
-      .ui-widget-content{
-          padding:0;
-      }
-
-      div#question {
-          min-height:500px;
+      margin-bottom:30px;
+      width:100px;
+      font-size:2em !important;
       }
 
   </style>
   <script>
       $(document).ready(function() {
-          $('#newQuestionLink').click(showNewQuestion)
+          $('#newQuestionLink').click(showNewQuestion);
+          buttonify($("#newQuestionLink"));
+      });
+
+
+      $(document).ready(function() {
+          $('#voteLink').click(function() {
+              document.location = "/polls";
+          });
+          buttonify($("#voteLink"));
       });
 
       $(document).ready(function() {
-          $('#voteLink').click(function(){document.location="/polls";});
+          $('#viewLink').click(function() {
+              document.location = "<%= already_voted_url%>";
+          });
+          buttonify($("#viewLink"));
       });
 
-      $(document).ready(function() {
-          $('#viewLink').click(function(){document.location="<%= already_voted_url%>";});
-
-      });
-
-      function hideNewQuestion() {
-          $('#newDiv').hide();
-          $('#question').show();
+      function buttonify(button){
+          button.addClass("ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only");
       }
 
       function showNewQuestion() {
-          if($('#question').size() > 0) {
+          if ($('#question').size() > 0) {
               $('#question').hide("slide", { direction: "right" },
-                  function() {$('#newDiv').show("slide", { direction: "up" });});
+                                 function() {
+                                     $('#newDiv').show("slide", { direction: "up" });
+                                 });
           } else {
               $('#newDiv').show("slide", { direction: "up" });
           }
@@ -71,22 +66,28 @@
 
           $("a.vote_button").click(function(event) {
               event.preventDefault();
-              var $self=$(this);
+              var $self = $(this);
 
               $("#question").hide("slide", { direction: "left" },
                                  function() {
                                      document.location = $self.attr('href');
                                  });
           });
+
+          buttonify($(".vote_button"));
+
       })
-      </script>
+  </script>
 </head>
 <body>
+<div id="header">
+  <a href="/polls">TheYesOrNo.com</a>     
+</div>
 <div class="container_12">
-  <div class="grid_2 ui-widget-content ui-widget ui-corner-all">
-    <button id="newQuestionLink" class="ui-button ui-widget ui-state-default ui-corner-left ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Ask</span></button>
-    <button id="voteLink" class="ui-button ui-widget ui-state-default ui-corner-left ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Vote</span></button>
-    <button id="viewLink" class="ui-button ui-widget ui-state-default ui-corner-left ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">View</span></button>
+  <div class="grid_2">
+    <a id="newQuestionLink">Ask</a>
+    <a id="voteLink" role="button" aria-disabled="false">Vote</a>
+    <a id="viewLink" role="button" aria-disabled="false">View</a>
   </div>
 
   <div class="grid_6  ui-corner-all">
