@@ -40,7 +40,6 @@
     <ul>
       <li><a id="vote_link" href="#tabs-1">Vote</a></li>
       <li><a href="#tabs-2">Ask</a></li>  
-      <span id="already_voted_link_holder" class="ui-state-default ui-corner-top"><a id="already_voted_link" href="already_voted">View</a></span>
     </ul>
     <div id="tabs-1">
       <div id="question">
@@ -59,6 +58,7 @@
 
             <% unless flash[:just_voted].nil? %>
                 <%= render :partial => "answered_poll", :locals => {:poll => flash[:just_voted]} %>
+                <a id="already_voted_link" href="already_voted">See all the polls I voted on.</a>                
             <% end %>
         <% end %>
       </div>
