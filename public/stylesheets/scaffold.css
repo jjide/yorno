@@ -91,11 +91,6 @@ div#question {
     font-family: Tahoma, sans-serif;
 }
 
-#newDiv.newQuestion {
-    border: 1px solid #ccc;
-    padding: 2px;
-}
-
 h1 {
     line-height:1.1em;
     font-size:2em;

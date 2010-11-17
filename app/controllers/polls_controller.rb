@@ -30,14 +30,8 @@ class PollsController < ApplicationController
 	# GET /polls.xml
 	def index
     prepare_for_application_html
+    @selected_tab = 0;
     
-		max_id = cookies[:max_id]
-		max_id = max_id.nil? ? 0 : Integer(max_id)
-
-		@answer_me = Poll.where("id > ?", max_id).order("id asc").first
-		if @answer_me 			
-			@category = Category.find @answer_me.category_id
-		end
 
 		respond_to do |format|
 			format.html # index.html.erb
@@ -56,19 +50,19 @@ class PollsController < ApplicationController
       format.xml { render :xml => @poll }
     end
   end
-  
+
+
   def already_voted
     prepare_for_application_html
-    max_id = cookies[:max_id]
-    max_id = max_id.nil? ? 0 : Integer(max_id)
-    @polls = Poll.where("id <= ?", max_id)
+    @selected_tab = -1
+
+    @polls = Poll.where("id <= ?", get_max_id)
   end
 
 	# GET /polls/admin
 	def admin
-		max_id = cookies[:max_id]
-		max_id = max_id.nil? ? 0 : Integer(max_id)
-
+    max_id = get_max_id()
+		
 		@answer_me = Poll.where("id > ?", max_id).first
 		@polls = Poll.order("id asc").all
 
@@ -135,5 +129,19 @@ class PollsController < ApplicationController
   def prepare_for_application_html
     @poll = Poll.new
     @categories = Category.all    
+    max_id = cookies[:max_id]
+    max_id = max_id.nil? ? 0 : Integer(max_id)
+
+    @answer_me = Poll.where("id > ?", max_id).order("id asc").first
+    if @answer_me
+      @category = Category.find @answer_me.category_id
+    end
+
+  end
+
+  def get_max_id
+    max_id = cookies[:max_id]
+    max_id = max_id.nil? ? 0 : Integer(max_id)
+    max_id
   end
 end
