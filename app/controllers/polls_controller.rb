@@ -1,8 +1,14 @@
 class PollsController < ApplicationController
 
-	def vote_yes
+	def vote
 		@poll = Poll.find(params[:id])
-		@poll.yeses += 1
+
+    if('yes' == params[:vote])
+      @poll.yeses += 1
+    else
+      @poll.nos += 1
+    end
+
 		@poll.save
 		cookies[:max_id] = @poll.id
     flash[:just_voted] = @poll
@@ -11,19 +17,6 @@ class PollsController < ApplicationController
 			format.html { redirect_to(polls_url, :notice => 'Thank you for voting.') }
     end
 	end
-
-	def vote_no
-		@poll = Poll.find(params[:id])
-		@poll.nos += 1
-		@poll.save
-		cookies[:max_id] = @poll.id
-    flash[:just_voted] = @poll
-
-		respond_to do |format|
-			format.html { redirect_to(polls_url, :notice => 'Thank you for voting.') }
-		end
-	end
-
 
 
 	# GET /polls

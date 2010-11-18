@@ -12,8 +12,7 @@ Yorn::Application.routes.draw do
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
   #trying to get voting to work
-   match 'polls/:id/vote_yes' => 'polls#vote_yes', :as => :vote_yes
-   match 'polls/:id/vote_no' => 'polls#vote_no', :as => :vote_no
+   match 'polls/vote' => 'polls#vote', :as => :vote
    match 'already_voted' => 'polls#already_voted', :as => :already_voted
    match 'admin' => 'polls#admin', :as => :admin
    match 'upload' => 'polls#upload', :as => :upload
