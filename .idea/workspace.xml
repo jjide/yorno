@@ -11,7 +11,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/ui-bg_inset-hard_100_fcfdfd_1x100.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/javascripts/jquery-1.4.2.min.ignore" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/javascripts/jquery-effects.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/stylesheets/demo.ignore" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/stylesheets/reset.ignore" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/polls_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/polls_controller.rb" />
@@ -21,7 +20,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/jquery-ui-1.8.6.custom.min.js" afterPath="$PROJECT_DIR$/public/javascripts/jquery-ui-1.8.6.custom.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/960.css" afterPath="$PROJECT_DIR$/public/stylesheets/960.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/jquery-ui-1.8.6.custom.css" afterPath="$PROJECT_DIR$/public/stylesheets/jquery-ui-1.8.6.custom.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/scaffold.css" afterPath="$PROJECT_DIR$/public/stylesheets/scaffold.css" />
     </list>
     <ignored path=".idea/workspace.xml" />
@@ -57,10 +55,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="10" selection-start="1150" selection-end="1150" vertical-scroll-proportion="-1.25">
+            <state line="128" column="22" selection-start="4012" selection-end="4012" vertical-scroll-proportion="2.2808511">
               <folding />
             </state>
           </provider>
@@ -69,7 +67,7 @@
       <file leaf-file-name="960.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/960.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="45" selection-start="45" selection-end="45" vertical-scroll-proportion="-0.0">
+            <state line="0" column="46" selection-start="46" selection-end="46" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -93,10 +91,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scaffold.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="scaffold.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/scaffold.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="153" column="0" selection-start="2106" selection-end="2106" vertical-scroll-proportion="0.5951417">
+            <state line="65" column="0" selection-start="950" selection-end="950" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -167,8 +165,8 @@
         <option value="$PROJECT_DIR$/app/controllers/polls_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/public/stylesheets/jquery-ui-1.8.6.custom.css" />
-        <option value="$PROJECT_DIR$/public/stylesheets/960.css" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/public/stylesheets/960.css" />
         <option value="$PROJECT_DIR$/public/stylesheets/scaffold.css" />
       </list>
     </option>
@@ -776,13 +774,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/polls/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="51" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0">
@@ -797,23 +788,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="10" selection-start="1150" selection-end="1150" vertical-scroll-proportion="-1.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/jquery-ui-1.8.6.custom.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="116" column="420" selection-start="27699" selection-end="27699" vertical-scroll-proportion="0.26436782">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/960.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="45" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -839,9 +816,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/polls/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/960.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="46" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/scaffold.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="153" column="0" selection-start="2106" selection-end="2106" vertical-scroll-proportion="0.5951417">
+        <state line="65" column="0" selection-start="950" selection-end="950" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="128" column="22" selection-start="4012" selection-end="4012" vertical-scroll-proportion="2.2808511">
           <folding />
         </state>
       </provider>

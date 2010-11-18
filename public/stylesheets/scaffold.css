@@ -63,11 +63,6 @@ div.field, div.actions {
     list-style: square;
 }
 
-/*table#question-table td {*/
-    /*vertical-align: bottom;*/
-    /*padding: 12px;*/
-/*}*/
-
 div#question {
     text-align: center;
     padding-bottom: 48px;
@@ -157,5 +152,14 @@ body {
 
 
 div#tabs{
-    background:white;
+    background:#fefefe;
+}
+
+span#or_span{
+    margin:2em;
+}
+
+#ads_go_here {
+    background-color:white;
+    border: solid 2px silver;
 }

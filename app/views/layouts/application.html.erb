@@ -28,8 +28,17 @@
           $("#yes_button").button();
           $("#no_button").button();
           $("#poll_submit").button();
+          big_button($("#no_button"));
+          big_button($("#yes_button"));
 
       })
+
+          function big_button(button) {
+              button.width(150);
+              button.height(75);
+              button.css("font-size", "2em");
+              button.css("font-weight", "bold");
+          }
   </script>
 </head>
 <body>
@@ -61,6 +70,7 @@
               <%= form_tag "/polls/vote" do |f| %>
                   <%= hidden_field_tag 'id', @answer_me.id %>
                   <%= submit_tag "YES", :id => "yes_button"%>
+                  <span id="or_span">or</span>
                   <%= submit_tag "NO", :id => "no_button" %>
               <% end %>
             </div>
@@ -116,7 +126,7 @@
     </div>
   </div>
 
-  <div class="grid_2 ui-corner-all">
+  <div id="ads_go_here" class="grid_2 ui-corner-all">
     <ul>
       <li>ad 1</li>
       <li>ad 2</li>
