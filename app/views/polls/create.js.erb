@@ -1,4 +1,4 @@
-$("#new_poll").html("You just created a new poll! To follow the voting on your poll, go to <a href='http://sharp-sunset-59.heroku.com/polls/<%= flash[:new_id] %>'>http://sharp-sunset-59.heroku.com/polls/<%= flash[:new_id] %></a>");
+$("#new_poll").html("You just created a new poll!");
 $("#poll_question").focus();
 $("#new_poll_form")[0].reset();
 $("div#new_poll").effect("highlight", {}, 3000);
