@@ -30,6 +30,7 @@
 
           $("#yes_button").button();
           $("#no_button").button();
+          $("#poll_submit").button();
 
       })
 
@@ -100,9 +101,8 @@
               <%= f.label :category %>
               <br/>
               <%= select_tag "category_id", options_from_collection_for_select(@categories, "id", "name") %>
-
-
             </div>
+
             <div class="actions">
               <%= f.submit %>
             </div>
