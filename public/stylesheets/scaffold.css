@@ -8,7 +8,6 @@ body, p, ol, ul, td {
     font-family: verdana, arial,
     helvetica, sans-serif;
     font-size: 13px;
-    /*line-height: 18px;*/
 }
 
 pre {
@@ -149,4 +148,14 @@ div#header{
     border-bottom:solid 8px black;
     margin-bottom:20px;
     padding:0;
+    background:white;
+}
+
+body {
+    background: #000 url(/images/gradient.png) 100% top repeat-x;; 
+}
+
+
+div#tabs{
+    background:white;
 }

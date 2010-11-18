@@ -6,10 +6,7 @@
   <%= javascript_include_tag :all %>
   <%= csrf_meta_tag %>
   <script>
-
       $(document).ready(function() {
-//          $("#question").show("slide", { direction: "right" });
-
           $("a.vote_button").click(function(event) {
               event.preventDefault();
               var $self = $(this);
@@ -33,7 +30,6 @@
           $("#poll_submit").button();
 
       })
-
   </script>
 </head>
 <body>
@@ -41,6 +37,11 @@
   <a href="/polls">TheYesOrNo.com</a>
 </div>
 <div class="container_12">
+  <div class="grid_2">
+    &nbsp;
+  </div>
+
+
   <div class="grid_8" id="tabs">
     <ul>
       <li><a id="vote_link" href="#tabs-1">Vote</a></li>
@@ -115,8 +116,7 @@
     </div>
   </div>
 
-
-  <div class="grid_2  ui-corner-all">
+  <div class="grid_2 ui-corner-all">
     <ul>
       <li>ad 1</li>
       <li>ad 2</li>
