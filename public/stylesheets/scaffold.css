@@ -141,10 +141,20 @@ div#header{
     width:100%;
     text-align:left;
     border-bottom:solid 8px black;
-    margin-bottom:20px;
-    padding:0;
-    background:white;
+    padding: 0 0 0 42px;
+    background: #ffffff url(/images/logo.png) no-repeat left top;
+    height:42px;
 }
+
+div#header a {
+    position:relative;
+    bottom: -1.3em;
+}
+
+div.container_12{
+    margin-top:28px;
+}
+
 
 body {
     background: #000 url(/images/gradient.png) 100% top repeat-x;; 
