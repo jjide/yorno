@@ -82,8 +82,8 @@ div#question {
 
 h1 {
     line-height:1.1em;
-    font-size:2em;
 }
+
 
 .yes_percentage_number{
     float:left;
@@ -172,4 +172,8 @@ span#or_span{
 #ads_go_here {
     background-color:white;
     border: solid 2px silver;
+}
+
+.bio_name {
+    font-weight:bold;
 }

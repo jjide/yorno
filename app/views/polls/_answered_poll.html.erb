@@ -16,11 +16,13 @@
                 <% end %>
                 <tr>
                   <td class="percentage_number">
+                    Yes
                     <span class="yes_number"><%= number_to_percentage(yes_percentage, :precision => 0) %></span></td>
                   <td class="no_background">
                     <div style="width: <%= yes_percentage %>%"></div>
                   </td>
                   <td class="percentage_number">
+                    No
                     <span class="no_number"><%= number_to_percentage(no_percentage, :precision => 0) %></span></td>
                 </tr>
               </table>
