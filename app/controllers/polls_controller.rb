@@ -3,7 +3,7 @@ class PollsController < ApplicationController
 	def vote
 		@poll = Poll.find(params[:id])
 
-    if('yes' == params[:vote])
+    if('YES' == params[:commit])
       @poll.yeses += 1
     else
       @poll.nos += 1

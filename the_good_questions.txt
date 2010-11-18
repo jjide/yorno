@@ -1,49 +1,59 @@
-p = Poll.new; p.question = "Are children getting the educations they need in our public school system today?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Do you think Elin should have stayed with Tiger?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Do you recycle as much as you should?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Do you think every state should enforce the death penalty?"; p.category_id = Category.where("name = ?", "Philosophy").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Do you think Kindle is a good replacement for books?"; p.category_id = Category.where("name = ?", "Technology").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Is Nike the number 1 sporting goods company out there today?"; p.category_id = Category.where("name = ?", "Sports").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Should they stop delivering the yellow pages to people who don't want them?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Is the Lollapalooza Music Fest really worth all the money?"; p.category_id = Category.where("name = ?", "Entertainment").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Will Pete Rose ever be inducted into the MLB hall of fame?"; p.category_id = Category.where("name = ?", "Sports").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Will we ever find a cure for cancer?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Will we ever find a cure for autism?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Will we ever find a cure for AIDS?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Will Barack Obama win a second Presidential term?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Will the USA ever win the World Cup?"; p.category_id = Category.where("name = ?", "Sports").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Will the USA ever become oil independent?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Is the iPhone better than the Blackberry?"; p.category_id = Category.where("name = ?", "Technology").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Are the White Sox better than the Cubs?"; p.category_id = Category.where("name = ?", "Sports").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Are you gay?  "; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Do you make more than $50,000 a year?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Do you drive a car?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Are you a man?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Do you wash your hands 100% of the time after using a public/work bathroom?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Do you wash your hands 100% of the time after using you own bathroom at home?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Do you use a shield (paper towel or tissue) to open the bathroom door when leaving public/work restrooms?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Do you approve of a mosque being built at Ground Zero?"; p.category_id = Category.where("name = ?", "Religion").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Do you help beggars on the street when they ask you for money?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Have you ever had sex in  a car?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "When the check out person at the grocery store undercharges you, do you tell them?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Is Bud Light better that Miller Lite?"; p.category_id = Category.where("name = ?", "Advertising").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Will you buy a 3D TV?"; p.category_id = Category.where("name = ?", "Technology").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Do you own an Ipad?"; p.category_id = Category.where("name = ?", "Technology").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Is Walgreens more affordable than CVS?"; p.category_id = Category.where("name = ?", "Advertising").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Should teens be able to get their license at age 15?"; p.category_id = Category.where("name = ?", "Teen").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Do you consider yourself a healthy eater?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "If you were to win the lottery, would you tell your co-workers?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Can you go to the movies alone and feel O.K. about it?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Do you need to lose weight ?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Do you ever clip coupons?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Do you brown bag it to work to save money?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "If your boss was to propostion you for a one time sexual encounter that would definetly lead to your promotion, would you take it?"; p.category_id = Category.where("name = ?", "Philosophy").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "With Bosh, Wade, and Lebron, will Miami win the NBA Championship?"; p.category_id = Category.where("name = ?", "Sports").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "I love my husband but I cheated on him once, and only once. There is ABSOLUTLEY NO WAY he will ever find out. Do I have to tell him?"; p.category_id = Category.where("name = ?", "Philosophy").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Do you think Sarah Palin is really as dumb as they make her out to be?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Do you believe in love at first sight?"; p.category_id = Category.where("name = ?", "Philosophy").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Is there life after death?"; p.category_id = Category.where("name = ?", "Religion").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Do you own a snuggie?"; p.category_id = Category.where("name = ?", "Technology").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Do you read the Care Tags on you clothes before washing them?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Is Coke better than Pepsi?"; p.category_id = Category.where("name = ?", "Advertising").first.id; p.yeses=0; p.nos = 0; p.save;
-p = Poll.new; p.question = "Do you think you could do your bosses job better than they could?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos = 0; p.save;
+p = Poll.new; p.question = "Are children getting the educations they need in our public school system today?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Do you think Elin should have stayed with Tiger?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Do you believe in love at first sight?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "When on a first date, do you find it a turn off if your date is a picky eater and makes a lot of substitutions?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Do you recycle as much as you should?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Do you think every state should enforce the death penalty?"; p.category_id = Category.where("name = ?", "Philosophy").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Do you think Kindle is a good replacement for books?"; p.category_id = Category.where("name = ?", "Technology").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Is there a picture of yourself on your cell phone's wallpaper?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Is Nike the number one sporting goods company out there today?"; p.category_id = Category.where("name = ?", "Sports").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Should they stop delivering the yellow pages to people who don't want them?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Is the Lollapalooza Music Fest really worth all the money?"; p.category_id = Category.where("name = ?", "Entertainment").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Will Pete Rose ever be inducted into the MLB hall of fame?"; p.category_id = Category.where("name = ?", "Sports").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Will we ever find a cure for cancer?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Do you wash your hands 100% of the time after using your own bathroom at home?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Will we ever find a cure for AIDS?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Will Barack Obama win a second Presidential term?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Will the USA ever become oil independent?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Is the iPhone better than the Blackberry?"; p.category_id = Category.where("name = ?", "Technology").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Are the White Sox better than the Cubs?"; p.category_id = Category.where("name = ?", "Sports").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Do you think it is OK to Google and ex's current boyfriend/girlfriend?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Do you check your boyfriend/girlfriend's cell phone when they're not around?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Do you really give your job 100%?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Do you think same sex marriages should be legal?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Do you wash your hands 100% of the time after using a public/work bathroom?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Is this Bible just one Huge story?"; p.category_id = Category.where("name = ?", "Philosophy").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Do you use a shield (paper towel or tissue) to open the bathroom door when leaving public/work restrooms?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Do you approve of a mosque being built at Ground Zero?"; p.category_id = Category.where("name = ?", "Religion").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Do you help beggars on the street when they ask you for money?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Will the USA ever win the World Cup?"; p.category_id = Category.where("name = ?", "Sports").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Have you ever had sex in  a car?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "If the check out person at the grocery store undercharges you would you tell them?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Is Bud Light better that Miller Lite?"; p.category_id = Category.where("name = ?", "Advertising").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Will you buy a 3D TV?"; p.category_id = Category.where("name = ?", "Technology").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Do you think you think you will purchase an Ipad or similar device in the next 3 years?"; p.category_id = Category.where("name = ?", "Technology").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Has anyone ever gotten fired because of something you said about them?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Should teens be able to get their license at age 15?"; p.category_id = Category.where("name = ?", "Teen").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Do you consider yourself a healthy eater?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "If you were to win the lottery, would you tell your co-workers?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Can you go to the movies alone and feel O.K. about it?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Do you need to lose weight ?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Do you ever clip coupons?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Do you brown bag it to work to save money?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "If your boss was to propostion you for a one time sexual encounter that would definetly lead to your promotion, would you take it?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "With Bosh, Wade, and Lebron, will Miami win the NBA Championship?"; p.category_id = Category.where("name = ?", "Sports").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "I love my husband but I cheated on him once, and only once. There is ABSOLUTLEY NO WAY he will ever find out. Do I have to tell him?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Do you think Sarah Palin is really as dumb as they make her out to be?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Did you go out of your way to do something nice for someone today?"; p.category_id = Category.where("name = ?", "Philosophy").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Is there life after death?"; p.category_id = Category.where("name = ?", "Religion").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Do you own a snuggie?"; p.category_id = Category.where("name = ?", "Technology").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Do you read the Care Tags on you clothes before washing them?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Have you stolen something from a retailer or grocery store in the past year?"; p.category_id = Category.where("name = ?", "Advertising").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Do you think you could do your boss's job better than they could?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Do you like milk chocolate more than dark chocolate?"; p.category_id = Category.where("name = ?", "Advertising").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Have you ever looked in the mirror and been 100% satisfied with your body?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Does it bother you when girls have "Chipped" nail polish?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Is your degree related to your occupation?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Do you still use Myspace?"; p.category_id = Category.where("name = ?", "Technology").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Would you swerve out of the way to avoid hitting a squirrel if it meant you would incur minor damage to your car but save the squirrel?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
+p = Poll.new; p.question = "Would you ever crash a wedding?"; p.category_id = Category.where("name = ?", "Society").first.id; p.yeses=0; p.nos=0; p.save
