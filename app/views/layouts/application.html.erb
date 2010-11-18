@@ -78,10 +78,6 @@
               <% end %>
             </div>
 
-            <% unless flash[:just_voted].nil? %>
-                <%= render :partial => "answered_poll", :locals => {:poll => flash[:just_voted]} %>
-                <a id="already_voted_link" href="already_voted">See all the polls I voted on.</a>
-            <% end %>
         <% end %>
       </div>
     </div>
