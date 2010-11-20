@@ -33,22 +33,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/polls/index.html.erb">
+      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
+            <state line="198" column="0" selection-start="8792" selection-end="8792" vertical-scroll-proportion="0.5028818">
+              <folding>
+                <marker date="1290292706000" expanded="true" signature="1424:1444" placeholder="..." />
+                <marker date="1290292706000" expanded="true" signature="1488:1690" placeholder="..." />
+                <marker date="1290292706000" expanded="true" signature="1712:2368" placeholder="..." />
+                <marker date="1290292706000" expanded="true" signature="1738:2357" placeholder="..." />
+                <marker date="1290292706000" expanded="true" signature="1998:2325" placeholder="..." />
+                <marker date="1290292706000" expanded="true" signature="2391:3461" placeholder="..." />
+                <marker date="1290292706000" expanded="true" signature="2417:2430" placeholder="..." />
+                <marker date="1290292706000" expanded="true" signature="2474:3450" placeholder="..." />
+                <marker date="1290292706000" expanded="true" signature="2647:2971" placeholder="..." />
+                <marker date="1290292706000" expanded="true" signature="2783:2948" placeholder="..." />
+                <marker date="1290292706000" expanded="true" signature="3026:3335" placeholder="..." />
+                <marker date="1290292706000" expanded="true" signature="3370:3419" placeholder="..." />
+                <marker date="1290292706000" expanded="true" signature="3484:8402" placeholder="..." />
+                <marker date="1290292706000" expanded="true" signature="3494:4955" placeholder="..." />
+                <marker date="1290292706000" expanded="true" signature="4966:5704" placeholder="..." />
+                <marker date="1290292706000" expanded="true" signature="5715:7239" placeholder="..." />
+                <marker date="1290292706000" expanded="true" signature="7250:8391" placeholder="..." />
+                <marker date="1290292706000" expanded="false" signature="8425:8508" placeholder="..." />
+                <marker date="1290292706000" expanded="true" signature="8531:8561" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <file leaf-file-name="already_voted.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/polls/already_voted.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="0" selection-start="2322" selection-end="2322" vertical-scroll-proportion="-50.0">
-              <folding>
-                <element signature="tag#div#3;tag#div#1;tag#div#1;tag#body#0;tag#html#0" expanded="false" />
-              </folding>
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -89,10 +107,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="75" selection-start="107" selection-end="107" vertical-scroll-proportion="0.06364922">
+            <state line="3" column="75" selection-start="107" selection-end="107" vertical-scroll-proportion="-1.875">
               <folding />
             </state>
           </provider>
@@ -119,7 +137,7 @@
       <file leaf-file-name="_answered_poll.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/polls/_answered_poll.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="100" selection-start="753" selection-end="753" vertical-scroll-proportion="-11.875">
+            <state line="18" column="22" selection-start="651" selection-end="651" vertical-scroll-proportion="-11.25">
               <folding />
             </state>
           </provider>
@@ -172,9 +190,9 @@
         <option value="$PROJECT_DIR$/app/views/polls/_answered_poll.html.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/scaffold.css" />
         <option value="$PROJECT_DIR$/app/controllers/polls_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/polls/create.js.erb" />
         <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       </list>
     </option>
   </component>
@@ -239,7 +257,55 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="polls" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yorn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yorn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yorn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yorn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -676,20 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/polls/already_voted.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/polls/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/960.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="46" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
@@ -700,13 +752,6 @@
     <entry file="file://$PROJECT_DIR$/public/stylesheets/jquery-ui-1.8.6.custom.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="61" column="129" selection-start="3426" selection-end="3507" vertical-scroll-proportion="-4.1538463">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/polls/_answered_poll.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="100" selection-start="753" selection-end="753" vertical-scroll-proportion="-11.875">
           <folding />
         </state>
       </provider>
@@ -722,15 +767,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="52" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="0" selection-start="2322" selection-end="2322" vertical-scroll-proportion="-50.0">
-          <folding>
-            <element signature="tag#div#3;tag#div#1;tag#div#1;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -750,8 +786,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="75" selection-start="107" selection-end="107" vertical-scroll-proportion="0.06364922">
+        <state line="3" column="75" selection-start="107" selection-end="107" vertical-scroll-proportion="-1.875">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/polls/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/polls/already_voted.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/polls/_answered_poll.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="22" selection-start="651" selection-end="651" vertical-scroll-proportion="-11.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="198" column="0" selection-start="8792" selection-end="8792" vertical-scroll-proportion="0.5028818">
+          <folding>
+            <marker date="1290292706000" expanded="true" signature="1424:1444" placeholder="..." />
+            <marker date="1290292706000" expanded="true" signature="1488:1690" placeholder="..." />
+            <marker date="1290292706000" expanded="true" signature="1712:2368" placeholder="..." />
+            <marker date="1290292706000" expanded="true" signature="1738:2357" placeholder="..." />
+            <marker date="1290292706000" expanded="true" signature="1998:2325" placeholder="..." />
+            <marker date="1290292706000" expanded="true" signature="2391:3461" placeholder="..." />
+            <marker date="1290292706000" expanded="true" signature="2417:2430" placeholder="..." />
+            <marker date="1290292706000" expanded="true" signature="2474:3450" placeholder="..." />
+            <marker date="1290292706000" expanded="true" signature="2647:2971" placeholder="..." />
+            <marker date="1290292706000" expanded="true" signature="2783:2948" placeholder="..." />
+            <marker date="1290292706000" expanded="true" signature="3026:3335" placeholder="..." />
+            <marker date="1290292706000" expanded="true" signature="3370:3419" placeholder="..." />
+            <marker date="1290292706000" expanded="true" signature="3484:8402" placeholder="..." />
+            <marker date="1290292706000" expanded="true" signature="3494:4955" placeholder="..." />
+            <marker date="1290292706000" expanded="true" signature="4966:5704" placeholder="..." />
+            <marker date="1290292706000" expanded="true" signature="5715:7239" placeholder="..." />
+            <marker date="1290292706000" expanded="true" signature="7250:8391" placeholder="..." />
+            <marker date="1290292706000" expanded="false" signature="8425:8508" placeholder="..." />
+            <marker date="1290292706000" expanded="true" signature="8531:8561" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
