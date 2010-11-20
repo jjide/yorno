@@ -49,7 +49,7 @@ class PollsController < ApplicationController
     prepare_for_application_html
     @selected_tab = -1
 
-    @polls = Poll.where("id <= ?", get_max_id)
+    @polls = Poll.where("id <= ?", get_max_id).order("id asc")
   end
 
 	# GET /polls/admin
