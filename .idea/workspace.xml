@@ -36,28 +36,8 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="198" column="0" selection-start="8792" selection-end="8792" vertical-scroll-proportion="0.5028818">
-              <folding>
-                <marker date="1290292706000" expanded="true" signature="1424:1444" placeholder="..." />
-                <marker date="1290292706000" expanded="true" signature="1488:1690" placeholder="..." />
-                <marker date="1290292706000" expanded="true" signature="1712:2368" placeholder="..." />
-                <marker date="1290292706000" expanded="true" signature="1738:2357" placeholder="..." />
-                <marker date="1290292706000" expanded="true" signature="1998:2325" placeholder="..." />
-                <marker date="1290292706000" expanded="true" signature="2391:3461" placeholder="..." />
-                <marker date="1290292706000" expanded="true" signature="2417:2430" placeholder="..." />
-                <marker date="1290292706000" expanded="true" signature="2474:3450" placeholder="..." />
-                <marker date="1290292706000" expanded="true" signature="2647:2971" placeholder="..." />
-                <marker date="1290292706000" expanded="true" signature="2783:2948" placeholder="..." />
-                <marker date="1290292706000" expanded="true" signature="3026:3335" placeholder="..." />
-                <marker date="1290292706000" expanded="true" signature="3370:3419" placeholder="..." />
-                <marker date="1290292706000" expanded="true" signature="3484:8402" placeholder="..." />
-                <marker date="1290292706000" expanded="true" signature="3494:4955" placeholder="..." />
-                <marker date="1290292706000" expanded="true" signature="4966:5704" placeholder="..." />
-                <marker date="1290292706000" expanded="true" signature="5715:7239" placeholder="..." />
-                <marker date="1290292706000" expanded="true" signature="7250:8391" placeholder="..." />
-                <marker date="1290292706000" expanded="false" signature="8425:8508" placeholder="..." />
-                <marker date="1290292706000" expanded="true" signature="8531:8561" placeholder="..." />
-              </folding>
+            <state line="69" column="5" selection-start="1925" selection-end="1925" vertical-scroll-proportion="0.83295196">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -666,7 +646,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32964602" sideWeight="0.6705128" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.66410255" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7294872" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948717" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32948717" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -814,28 +794,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="198" column="0" selection-start="8792" selection-end="8792" vertical-scroll-proportion="0.5028818">
-          <folding>
-            <marker date="1290292706000" expanded="true" signature="1424:1444" placeholder="..." />
-            <marker date="1290292706000" expanded="true" signature="1488:1690" placeholder="..." />
-            <marker date="1290292706000" expanded="true" signature="1712:2368" placeholder="..." />
-            <marker date="1290292706000" expanded="true" signature="1738:2357" placeholder="..." />
-            <marker date="1290292706000" expanded="true" signature="1998:2325" placeholder="..." />
-            <marker date="1290292706000" expanded="true" signature="2391:3461" placeholder="..." />
-            <marker date="1290292706000" expanded="true" signature="2417:2430" placeholder="..." />
-            <marker date="1290292706000" expanded="true" signature="2474:3450" placeholder="..." />
-            <marker date="1290292706000" expanded="true" signature="2647:2971" placeholder="..." />
-            <marker date="1290292706000" expanded="true" signature="2783:2948" placeholder="..." />
-            <marker date="1290292706000" expanded="true" signature="3026:3335" placeholder="..." />
-            <marker date="1290292706000" expanded="true" signature="3370:3419" placeholder="..." />
-            <marker date="1290292706000" expanded="true" signature="3484:8402" placeholder="..." />
-            <marker date="1290292706000" expanded="true" signature="3494:4955" placeholder="..." />
-            <marker date="1290292706000" expanded="true" signature="4966:5704" placeholder="..." />
-            <marker date="1290292706000" expanded="true" signature="5715:7239" placeholder="..." />
-            <marker date="1290292706000" expanded="true" signature="7250:8391" placeholder="..." />
-            <marker date="1290292706000" expanded="false" signature="8425:8508" placeholder="..." />
-            <marker date="1290292706000" expanded="true" signature="8531:8561" placeholder="..." />
-          </folding>
+        <state line="69" column="5" selection-start="1925" selection-end="1925" vertical-scroll-proportion="0.83295196">
+          <folding />
         </state>
       </provider>
     </entry>
