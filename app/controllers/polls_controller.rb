@@ -10,7 +10,7 @@ class PollsController < ApplicationController
     end
 
 		@poll.save
-		cookies.permanent[:max_id] = @poll.id
+		cookies[:max_id] = @poll.id
     flash[:just_voted] = @poll
 
 		respond_to do |format|
@@ -122,7 +122,7 @@ class PollsController < ApplicationController
   def prepare_for_application_html
     @poll = Poll.new
     @categories = Category.all    
-    max_id = cookies.permanent[:max_id]
+    max_id = cookies[:max_id]
     max_id = max_id.nil? ? 0 : Integer(max_id)
 
     @answer_me = Poll.where("id > ?", max_id).order("id asc").first
@@ -133,7 +133,7 @@ class PollsController < ApplicationController
   end
 
   def get_max_id
-    max_id = cookies.permanent[:max_id]
+    max_id = cookies[:max_id]
     max_id = max_id.nil? ? 0 : Integer(max_id)
     max_id
   end
