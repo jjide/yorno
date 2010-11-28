@@ -10,7 +10,7 @@ class PollsController < ApplicationController
     end
 
 		@poll.save
-		cookies[:max_id] = @poll.id
+		cookies[:max_id] = {:value => @poll.id, :expires => Time.now + 2.months}
     flash[:just_voted] = @poll
 
 		respond_to do |format|
