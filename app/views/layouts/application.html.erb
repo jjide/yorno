@@ -19,8 +19,7 @@
 
 
           $("#tabs").tabs({ selected: <%= @selected_tab %> });
-          if (<%= @selected_tab %> == -1
-          )
+          if (<%= @selected_tab %> == -1)
           {
               $("#already_voted_link_holder").addClass("ui-state-focus ui-tabs-selected ui-state-active");
               $("#already_voted_link_holder").removeClass("ui-state-default");
@@ -105,6 +104,7 @@
 
     <div id="tabs-2">
       <div id="new_poll">
+
       </div>
       <div id="newDiv" class="newQuestion">
         <%= form_for @poll, :html => {:id => 'new_poll_form'}, :remote => true do |f| %>

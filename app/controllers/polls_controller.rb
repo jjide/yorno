@@ -90,7 +90,7 @@ class PollsController < ApplicationController
 
 		respond_to do |format|
 			if @poll.save
-				flash[:new_id ] = @poll.id				
+				flash[:new_id ] = @poll.id
 				format.html { redirect_to :action=> "index" }
 				format.js
 			else
