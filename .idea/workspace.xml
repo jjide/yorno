@@ -5,7 +5,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/polls_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/polls_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/polls/create.js.erb" afterPath="$PROJECT_DIR$/app/views/polls/create.js.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/polls/show.html.erb" afterPath="$PROJECT_DIR$/app/views/polls/show.html.erb" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="yorn.iws" />
@@ -34,25 +34,46 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="632" selection-end="632" vertical-scroll-proportion="40.625">
+            <state line="82" column="0" selection-start="2377" selection-end="2377" vertical-scroll-proportion="32.916668">
+              <folding>
+                <element signature="tag#div#2;tag#div#1;tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="tag#div#3;tag#div#1;tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/polls/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="0" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create.js.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/polls/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create.js.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/polls/create.js.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="217" selection-end="217" vertical-scroll-proportion="0.062370062">
+            <state line="5" column="0" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="polls_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="polls_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/polls_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="19" selection-start="1723" selection-end="1723" vertical-scroll-proportion="-5.730769">
+            <state line="37" column="22" selection-start="702" selection-end="702" vertical-scroll-proportion="0.5769231">
               <folding />
             </state>
           </provider>
@@ -104,7 +125,6 @@
         <option value="$PROJECT_DIR$/public/javascripts/rails.js" />
         <option value="$PROJECT_DIR$/app/views/polls/create.rjs" />
         <option value="$PROJECT_DIR$/app/views/polls/admin.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/polls/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/polls/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/polls/already_voted.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
@@ -114,9 +134,10 @@
         <option value="$PROJECT_DIR$/app/views/polls/_answered_poll.html.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/scaffold.css" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/app/controllers/polls_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/polls/create.js.erb" />
+        <option value="$PROJECT_DIR$/app/views/polls/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/polls_controller.rb" />
       </list>
     </option>
   </component>
@@ -194,23 +215,23 @@
   </component>
   <component name="PropertiesComponent">
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="113" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="167" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="110" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="164" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="119" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="116" />
     <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.JavaScript" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="127" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="920" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="918" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="125" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="123" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="917" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="915" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="121" />
     <property name="GoToClass.includeJavaFiles" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="165" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="162" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="options.searchVisible" value="true" />
@@ -556,11 +577,6 @@
         <state line="58" column="88" selection-start="22883" selection-end="22883" vertical-scroll-proportion="0.33286908" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/polls/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="66" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/rubies/ruby-1.9.2-p0/lib/ruby/1.9.1/rdoc/generator/template/darkfish/js/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="2605" selection-start="20109" selection-end="20120" vertical-scroll-proportion="0.33482143" />
@@ -574,11 +590,6 @@
     <entry file="file://$PROJECT_DIR$/public/javascripts/jquery-ui-1.8.6.custom.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="116" column="420" selection-start="27699" selection-end="27699" vertical-scroll-proportion="0.26436782" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/polls/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/polls/already_voted.html.erb">
@@ -622,23 +633,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/polls_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/polls/create.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="19" selection-start="1723" selection-end="1723" vertical-scroll-proportion="-5.730769">
+        <state line="5" column="0" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/polls/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="632" selection-end="632" vertical-scroll-proportion="40.625">
+        <state line="82" column="0" selection-start="2377" selection-end="2377" vertical-scroll-proportion="32.916668">
+          <folding>
+            <element signature="tag#div#2;tag#div#1;tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#3;tag#div#1;tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/polls/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/polls/create.js.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/polls_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="217" selection-end="217" vertical-scroll-proportion="0.062370062">
+        <state line="37" column="22" selection-start="702" selection-end="702" vertical-scroll-proportion="0.5769231">
           <folding />
         </state>
       </provider>

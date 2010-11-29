@@ -35,6 +35,7 @@ class PollsController < ApplicationController
   # GET /polls/1.xml
   def show
     prepare_for_application_html
+    @selected_tab = -1;
     @poll = Poll.find params[:id]
     @category = Category.find @poll.category_id
 
