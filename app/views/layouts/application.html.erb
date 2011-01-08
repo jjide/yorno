@@ -105,7 +105,7 @@
                     <h4><%= @category.name %></h4>
 
                     <div id="vote_buttons">
-                        <%= form_tag "/polls/vote" do |f| %>
+                        <%= form_tag "/polls/vote" do %>
                             <%= hidden_field_tag 'id', @answer_me.id %>
                             <%= submit_tag "YES", :id => "yes_button" %>
                             <span id="or_span">or</span>
