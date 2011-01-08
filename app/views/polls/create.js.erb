@@ -1,5 +1,8 @@
+<%= remotipart_response do %>
 $("#new_poll").html('You just created a new poll! To follow the voting on your poll, go to <a href="/polls/<%=flash[:new_id]%>">http://www.theyesorno.com/polls/<%=flash[:new_id]%></a>.');
 $("#poll_question").focus();
 $("#new_poll_form")[0].reset();
 $("div#new_poll").effect("highlight", {}, 3000);
 <% flash.discard() %>
+<% end %>
+

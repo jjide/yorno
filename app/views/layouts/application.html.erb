@@ -23,7 +23,8 @@
             $("#already_voted_link_holder").addClass("ui-state-focus ui-tabs-selected ui-state-active");
             $("#already_voted_link_holder").removeClass("ui-state-default");
             $("div#tabs ul li a").each(function() {
-                this.href = "/polls/" + this.href;
+//                this.href = "/polls/" + this.href.substring(this.href.indexOf("#"));
+                this.click(function(){window.location = "/polls/"+this.hash});
             });
             <% end %>
 
@@ -33,7 +34,22 @@
         $("#poll_submit").button();
         big_button($("#no_button"));
         big_button($("#yes_button"));
+            $('#new_poll_form input').change(function() {
+                $(this).parent().ajaxSubmit({
+                    beforeSubmit: function(a, f, o) {
+                        o.dataType = 'json';
+                    },
+                    complete: function(XMLHttpRequest, textStatus) {
+                        // XMLHttpRequest.responseText will contain the URL of the uploaded image.
+                        // Put it in an image element you create, or do with it what you will.
+                        // For example, if you have an image elemtn with id "my_image", then
+                        //  $('#my_image').attr('src', XMLHttpRequest.responseText);
+                        // Will set that image tag to display the uploaded image.
+                    }
+                });
+            });
         });
+
 
 
         function big_button(button) {
@@ -110,7 +126,8 @@
 
             </div>
             <div id="newDiv" class="newQuestion">
-                <%= form_for @poll, :html => {:id => 'new_poll_form'}, :remote => true do |f| %>
+                <!--START HERE-->
+                <%= form_for(@poll, :html => {:method => :post, :id => 'new_poll_form', :multipart => true}, :remote => true) do |f| %>
                     <% if @poll.errors.any? %>
                         <div id="error_explanation">
                             <h2><%= pluralize(@poll.errors.count, "error") %> prohibited this poll from being
@@ -132,6 +149,8 @@
                         <%= f.label :category %>
                         <br/>
                         <%= select_tag "category_id", options_from_collection_for_select(@categories, "id", "name") %>
+                        <br/>
+                        <%= f.file_field :photo %>
                     </div>
 
                     <div class="actions">

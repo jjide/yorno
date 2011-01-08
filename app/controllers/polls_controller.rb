@@ -8,7 +8,7 @@ class PollsController < ApplicationController
     else
       @poll.nos += 1
     end
-
+		
 		@poll.save
 		cookies[:max_id] = {:value => @poll.id, :expires => Time.now + 2.months}
     flash[:just_voted] = @poll

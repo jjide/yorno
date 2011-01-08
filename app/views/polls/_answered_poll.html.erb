@@ -3,6 +3,7 @@
           &mdash;
           <%= Category.find(poll.category_id).name %>
         </span>
+        <%= image_tag(poll.photo.url(:large)) unless poll.photo.url.nil? %>
 
         <span>
           <% total = poll.yeses + poll.nos %>
@@ -26,6 +27,7 @@
                     <span class="no_number"><%= number_to_percentage(no_percentage, :precision => 0) %></span></td>
                 </tr>
               </table>
+
           <% else %>
               0 votes so far
           <% end %>
