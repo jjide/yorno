@@ -84,18 +84,24 @@ class PollsController < ApplicationController
 	# POST /polls
 	# POST /polls.xml
 	def create
-		@poll = Poll.new(params[:poll])
+		puts "Do I even get into create?????"
+    @poll = Poll.new(params[:poll])
 		@poll.yeses=0
 		@poll.nos=0
 		@poll.category_id=params[:category_id]
 
-		respond_to do |format|
+		puts "About to respond_to"
+
+    respond_to do |format|
+      puts "About to save #{@poll.to_s}"
 			if @poll.save
-				flash[:new_id ] = @poll.id
+		    puts "Just saved"
+        flash[:new_id ] = @poll.id
 				format.html { redirect_to :action=> "index" }
 				format.js
 			else
-				format.html { render :action => "new" }
+				puts "didn't save"
+        format.html { render :action => "new" }
 				format.js
 			end
 		end
