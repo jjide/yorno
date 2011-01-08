@@ -95,7 +95,7 @@ class PollsController < ApplicationController
     respond_to do |format|
       puts "About to save #{@poll.to_s}"
 			unless @poll.valid?
-        endputs @poll.errors.full_messages
+        puts @poll.errors.full_messages
       end
       
       if @poll.save
