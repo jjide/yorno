@@ -5,77 +5,6 @@
     <%= stylesheet_link_tag :all %>
     <%= javascript_include_tag :all %>
     <%= csrf_meta_tag %>
-    <script>
-        $(document).ready(function() {
-            $("a.vote_button").click(function(event) {
-                event.preventDefault();
-                var $self = $(this);
-
-                $("#question").hide("slide", { direction: "left" },
-                                   function() {
-                                       document.location = $self.attr('href');
-                                   });
-            });
-
-
-            $("#tabs").tabs({ selected: <%= @selected_tab %> });
-            <% if @selected_tab == -1 %>
-            $("#already_voted_link_holder").addClass("ui-state-focus ui-tabs-selected ui-state-active");
-            $("#already_voted_link_holder").removeClass("ui-state-default");
-            $("div#tabs ul li a").each(function() {
-//                this.href = "/polls/" + this.href.substring(this.href.indexOf("#"));
-                this.click(function(){window.location = "/polls/"+this.hash});
-            });
-            <% end %>
-
-
-        $("#yes_button").button();
-        $("#no_button").button();
-        $("#poll_submit").button();
-        big_button($("#no_button"));
-        big_button($("#yes_button"));
-            $('#new_poll_form input').change(function() {
-                $(this).parent().ajaxSubmit({
-                    beforeSubmit: function(a, f, o) {
-                        o.dataType = 'json';
-                    },
-                    complete: function(XMLHttpRequest, textStatus) {
-                        // XMLHttpRequest.responseText will contain the URL of the uploaded image.
-                        // Put it in an image element you create, or do with it what you will.
-                        // For example, if you have an image elemtn with id "my_image", then
-                        //  $('#my_image').attr('src', XMLHttpRequest.responseText);
-                        // Will set that image tag to display the uploaded image.
-                    }
-                });
-            });
-        });
-
-
-
-        function big_button(button) {
-            button.width(150);
-            button.height(75);
-            button.css("font-size", "2em");
-            button.css("font-weight", "bold");
-        }
-    </script>
-
-    <script type="text/javascript">
-
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-19766017-1']);
-        _gaq.push(['_trackPageview']);
-
-        (function() {
-            var ga = document.createElement('script');
-            ga.type = 'text/javascript';
-            ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(ga, s);
-        })();
-
-    </script>
 </head>
 <body>
 <div id="header">
@@ -94,32 +23,6 @@
             <li><a href="#tabs-4">About Us</a></li>
             <li><a href="#tabs-5">Contact us</a></li>
         </ul>
-        <div id="tabs-1">
-            <div id="question">
-                <% if @answer_me.nil? %>
-                    No more questions for you to answer
-                <% else %>
-                    <h2>Question:</h2>
-
-                    <h1><%= @answer_me.question %></h1>
-                    <h4><%= @category.name %></h4>
-
-                    <div id="vote_buttons">
-                        <%= form_tag "/polls/vote" do %>
-                            <%= hidden_field_tag 'id', @answer_me.id %>
-                            <%= submit_tag "YES", :id => "yes_button" %>
-                            <span id="or_span">or</span>
-                            <%= submit_tag "NO", :id => "no_button" %>
-                        <% end %>
-                    </div>
-
-                    <% unless flash[:just_voted].nil? %>
-                        <%= render :partial => "answered_poll", :locals => {:poll => flash[:just_voted]} %>
-                        <a id="already_voted_link" href="already_voted">See all the polls I voted on.</a>
-                    <% end %>
-                <% end %>
-            </div>
-        </div>
 
         <div id="tabs-2">
             <div id="new_poll">
