@@ -94,6 +94,7 @@ class PollsController < ApplicationController
 
     respond_to do |format|
       puts "About to save #{@poll.to_s}"
+      puts "`which identify`"
 			unless @poll.valid?
         puts @poll.errors.full_messages
       end

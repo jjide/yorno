@@ -43,7 +43,7 @@
       <file leaf-file-name="polls_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/polls_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="8" selection-start="1878" selection-end="1878" vertical-scroll-proportion="0.2264151">
+            <state line="96" column="28" selection-start="1875" selection-end="1875" vertical-scroll-proportion="0.16981132">
               <folding />
             </state>
           </provider>
@@ -712,15 +712,15 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/controllers/polls_controller.rb</url>
-          <line>116</line>
+          <line>117</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/controllers/polls_controller.rb</url>
-          <line>133</line>
+          <line>134</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/controllers/polls_controller.rb</url>
-          <line>146</line>
+          <line>147</line>
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -833,7 +833,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/polls_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="8" selection-start="1878" selection-end="1878" vertical-scroll-proportion="0.2264151">
+        <state line="96" column="28" selection-start="1875" selection-end="1875" vertical-scroll-proportion="0.16981132">
           <folding />
         </state>
       </provider>
