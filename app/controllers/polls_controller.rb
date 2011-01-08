@@ -94,7 +94,11 @@ class PollsController < ApplicationController
 
     respond_to do |format|
       puts "About to save #{@poll.to_s}"
-			if @poll.save
+			unless @poll.valid?
+        endputs @poll.errors.full_messages
+      end
+      
+      if @poll.save
 		    puts "Just saved"
         flash[:new_id ] = @poll.id
 				format.html { redirect_to :action=> "index" }
