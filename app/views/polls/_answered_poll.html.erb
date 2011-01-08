@@ -3,7 +3,7 @@
           &mdash;
           <%= Category.find(poll.category_id).name %>
         </span>
-        <%= image_tag(poll.photo.url(:large)) unless poll.photo.url.nil? %>
+        <div><%= image_tag(poll.photo.url(:large)) unless poll.photo.url.nil? %></div>
 
         <span>
           <% total = poll.yeses + poll.nos %>
