@@ -38,5 +38,8 @@ module Yorn
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+
+    #as per heroku's logging advice: (http://docs.heroku.com/logging)
+    config.action_controller.logger = Logger.new(STDOUT)
   end
 end
