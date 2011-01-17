@@ -55,7 +55,7 @@
 
         function picturesChanged(){
             var selectedText = $("#pictures option:selected").val();
-
+            alert('pictures changed to: ' + selectedText);
             if(selectedText == "0") {
                 $('#photo').hide();
                 $('#photo2').hide();
@@ -103,7 +103,7 @@
     </div>
 
 
-    <div class="grid_8" id="tabs">
+    <div class="grid_12" id="tabs">
         <ul>
             <li><a id="vote_link" href="#tabs-1">Vote</a></li>
             <li><a href="#tabs-2">Ask</a></li>
