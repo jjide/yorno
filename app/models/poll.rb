@@ -5,7 +5,7 @@ class Poll < ActiveRecord::Base
                     :s3_credentials => "#{Rails.root}/config/s3.yml",
                     :path => "/:style/:filename",
                     :styles =>{
-                        :large => "540x360"
+                        :large => "480x320"
                     }
 
   has_attached_file :photo2,
@@ -13,6 +13,6 @@ class Poll < ActiveRecord::Base
                     :s3_credentials => "#{Rails.root}/config/s3.yml",
                     :path => "/:style/:filename",
                     :styles =>{
-                        :large => "540x360"
+                        :large => "480x320"
                     }
 end

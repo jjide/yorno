@@ -19,15 +19,14 @@
 
 
             $("#tabs").tabs({ selected: <%= @selected_tab %> });
+
             <% if @selected_tab == -1 %>
             $("#already_voted_link_holder").addClass("ui-state-focus ui-tabs-selected ui-state-active");
             $("#already_voted_link_holder").removeClass("ui-state-default");
-            $("div#tabs ul li a").each(function() {
-//                this.href = "/polls/" + this.href.substring(this.href.indexOf("#"));
-                this.click(function(){window.location = "/polls/"+this.hash});
+            $("div#tabs ul li a").each(function(index) {
+                $(this).click(function(){window.location = "/polls/"+this.hash});
             });
             <% end %>
-
 
         $("#yes_button").button();
         $("#no_button").button();
@@ -55,7 +54,6 @@
 
         function picturesChanged(){
             var selectedText = $("#pictures option:selected").val();
-            alert('pictures changed to: ' + selectedText);
             if(selectedText == "0") {
                 $('#photo').hide();
                 $('#photo2').hide();
