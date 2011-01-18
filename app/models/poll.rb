@@ -8,6 +8,9 @@ class Poll < ActiveRecord::Base
                         :large => "480x320"
                     }
 
+
+
+  
   has_attached_file :photo2,
                     :storage => :s3,
                     :s3_credentials => "#{Rails.root}/config/s3.yml",
