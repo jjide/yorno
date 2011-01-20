@@ -117,8 +117,8 @@
                     <h2>Question:</h2>
 
                     <div>
-                        <%= image_tag(@poll.photo.url(:large)) unless !@poll.photo.file? %>
-                        <%= image_tag(@poll.photo2.url(:large)) unless !@poll.photo2.file? %>
+                        <%= image_tag(@answer_me.photo.url(:large)) unless !@answer_me.photo.file? %>
+                        <%= image_tag(@answer_me.photo2.url(:large)) unless !@answer_me.photo2.file? %>
                     </div>
                     <h1><%= @answer_me.question %></h1>
                     <h4><%= @category.name %></h4>
