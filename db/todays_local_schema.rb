@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(:version => 20110112011329) do
     t.string    "photo2_file_name"
     t.string    "photo2_content_type"
     t.integer   "photo2_file_size"
-    t.timestamp "photo2_updated_at"
+    t.datetime  "photo2_updated_at"
   end
 
 end
