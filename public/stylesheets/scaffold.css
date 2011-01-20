@@ -85,6 +85,15 @@ h1 {
 }
 
 
+.percentages {
+    text-align: center;
+}
+
+.percentages table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .yes_percentage_number{
     float:left;
 }
