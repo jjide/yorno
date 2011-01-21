@@ -161,7 +161,7 @@ div#header a {
 }
 
 div.container_12{
-    margin-top:28px;
+    margin-top:10px;
 }
 
 
@@ -185,4 +185,10 @@ span#or_span{
 
 .bio_name {
     font-weight:bold;
+}
+
+#the_question {
+    height:308px;
+    min-height:308px;
+    max-height:308px;
 }

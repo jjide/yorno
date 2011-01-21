@@ -50,7 +50,18 @@
         });
 
         $('#pictures').change(picturesChanged);
+        $('#poll_question').keyup(questionChanged);
         });
+
+        function questionChanged(){
+            var length = $('#poll_question')[0].value.length;
+            if(length > 140) {
+                $('#poll_question')[0].value = $('#poll_question')[0].value.substr(0, 140);
+                length = 140;
+            }
+
+            $("#counter")[0].innerHTML = length+"/140";
+        }
 
         function picturesChanged(){
             var selectedText = $("#pictures option:selected").val();
@@ -96,9 +107,6 @@
     <a href="/polls">TheYesOrNo.com</a>
 </div>
 <div class="container_12">
-    <div class="grid_2">
-        &nbsp;
-    </div>
 
 
     <div class="grid_12" id="tabs">
@@ -120,7 +128,7 @@
                         <%= image_tag(@answer_me.photo.url(:large)) unless !@answer_me.photo.file? %>
                         <%= image_tag(@answer_me.photo2.url(:large)) unless !@answer_me.photo2.file? %>
                     </div>
-                    <h1><%= @answer_me.question %></h1>
+                    <h1 id="the_question"><%= @answer_me.question %></h1>
                     <h4><%= @category.name %></h4>
 
                     <div id="vote_buttons">
@@ -164,6 +172,7 @@
                         <%= f.label :question %>
                         <br/>
                         <%= f.text_area :question %>
+                        <div id="counter">0/140</div>
                         <br/>
                         <%= f.label :category %>
                         <br/>
