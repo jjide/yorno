@@ -117,35 +117,36 @@
             <li><a href="#tabs-5">Contact us</a></li>
         </ul>
         <div id="tabs-1">
-            <% puts "inside tabs-1 #{@answer_me} #{@category}  #{flash[:just_voted]}"%>
-            <div id="question">
+            <!--<div id="question">-->
                 <% if @answer_me.nil? %>
                     No more questions for you to answer
-                <% else %>
-                    <h2>Question:</h2>
-
-                    <div>
+                <% else if @answer_me.photo.file?  %>
+                    <div id="pics">
                         <%= image_tag(@answer_me.photo.url(:large)) unless !@answer_me.photo.file? %>
                         <%= image_tag(@answer_me.photo2.url(:large)) unless !@answer_me.photo2.file? %>
                     </div>
-                    <h1 id="the_question"><%= @answer_me.question %></h1>
+                <% end
+                    h1_class = @answer_me.photo.file? ? "pic_question" : "text_question";
+                %>
+                    <h1 class="<%=h1_class%>"><%= @answer_me.question %></h1>
                     <h4><%= @category.name %></h4>
 
                     <div id="vote_buttons">
                         <%= form_tag "/polls/vote" do %>
                             <%= hidden_field_tag 'id', @answer_me.id %>
                             <%= submit_tag "YES", :id => "yes_button" %>
-                            <span id="or_span">or</span>
+                            <span id="or">or</span>
                             <%= submit_tag "NO", :id => "no_button" %>
                         <% end %>
                     </div>
 
                     <% unless flash[:just_voted].nil? %>
+                    <br>
                         <%= render :partial => "answered_poll", :locals => {:poll => flash[:just_voted]} %>
                         <a id="already_voted_link" href="already_voted">See all the polls I voted on.</a>
                     <% end %>
                 <% end %>
-            </div>
+            <!--</div>-->
         </div>
 
         <div id="tabs-2">

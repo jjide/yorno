@@ -1,12 +1,11 @@
 body {
     background-color: #fff;
     color: #333;
-    margin:0;
+    margin: 0;
 }
 
 body, p, ol, ul, td {
-    font-family: verdana, arial,
-    helvetica, sans-serif;
+    font-family: verdana, arial, helvetica, sans-serif;
     font-size: 13px;
 }
 
@@ -63,11 +62,6 @@ div.field, div.actions {
     list-style: square;
 }
 
-div#question {
-    text-align: center;
-    padding-bottom: 48px;
-}
-
 .hideMe {
     display: none;
 }
@@ -81,29 +75,28 @@ div#question {
 }
 
 h1 {
-    line-height:1.1em;
+    line-height: 1.1em;
 }
-
 
 .percentages {
     text-align: center;
 }
 
-.percentages table{
+.percentages table {
     margin-left: auto;
     margin-right: auto;
 }
 
-.yes_percentage_number{
-    float:left;
+.yes_percentage_number {
+    float: left;
 }
 
 .no_percentage_number {
-    float:right;
+    float: right;
 }
 
-.total{
-    text-align:center;
+.total {
+    text-align: center;
 }
 
 table {
@@ -111,84 +104,128 @@ table {
 
 #answered li {
     margin-bottom: 3em;
-    width:400px;
+    width: 400px;
 }
+
 td.no_background {
-    width:385px;
+    width: 385px;
     background-color: red;
-    margin:0;
-    padding:0;
-    height:36px;
+    margin: 0;
+    padding: 0;
+    height: 36px;
 }
 
 td.no_background div {
-    background-color:green;
-    color:white;
-    height:100%;
+    background-color: green;
+    color: white;
+    height: 100%;
 }
 
-.percentage_number{
+.percentage_number {
     width: 8em;
 }
 
-.yes_number{
-    color:green;
-    font-weight:bold;
-    text-align:right;
+.yes_number {
+    color: green;
+    font-weight: bold;
+    text-align: right;
 }
 
 .no_number {
-    color:red;
-    font-weight:bold;
-    text-align:left;
+    color: red;
+    font-weight: bold;
+    text-align: left;
 }
 
-div#vote_buttons{margin-bottom:100px;}
-
-
-div#header{
-    width:100%;
-    text-align:left;
-    border-bottom:solid 8px black;
+div#header {
+    width: 100%;
+    text-align: left;
+    border-bottom: solid 8px black;
     padding: 0 0 0 42px;
     background: #ffffff url(/images/logo.png) no-repeat left top;
-    height:42px;
+    height: 42px;
 }
 
 div#header a {
-    position:relative;
+    position: relative;
     bottom: -1.3em;
 }
 
-div.container_12{
-    margin-top:10px;
+div.container_12 {
+    margin-top: 10px;
 }
-
 
 body {
-    background: #000 url(/images/gradient.png) 100% top repeat-x;; 
+    background: #000 url(/images/gradient.png) 100% top repeat-x;;
 }
 
-
-div#tabs{
-    background:#fefefe;
+div#tabs {
+    background: #fefefe;
+    display: block;
 }
 
-span#or_span{
-    margin:2em;
+#or {
+    margin: 2em;
+    height: 75px;
 }
 
 #ads_go_here {
-    background-color:white;
+    background-color: white;
     border: solid 2px silver;
 }
 
 .bio_name {
-    font-weight:bold;
+    font-weight: bold;
 }
 
-#the_question {
-    height:308px;
-    min-height:308px;
-    max-height:308px;
+#question img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2, h1 {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#pics {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-height:400px;
+    min-height:400px;
+}
+
+div#tabs-1 {
+    min-height: 550px;
+    max-height: 550px;
+    text-align: center;
+}
+
+div#vote_buttons {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#tabs-1 h1 {
+}
+
+h1.pic_question {
+    font-size: 1em;
+    min-height: 50px;
+    max-height: 50px;
+}
+
+h1.text_question {
+    min-height: 450px;
+    max-height: 450px;
+}
+
+.question {
+    color:gray;
+    margin-top:10px;
 }
