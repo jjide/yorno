@@ -162,6 +162,7 @@ body {
 div#tabs {
     background: #fefefe;
     display: block;
+    text-align:center;
 }
 
 #or {
@@ -203,6 +204,7 @@ div#tabs-1 {
     min-height: 550px;
     max-height: 550px;
     text-align: center;
+    clear:both;
 }
 
 div#vote_buttons {
@@ -228,4 +230,7 @@ h1.text_question {
 .question {
     color:gray;
     margin-top:10px;
+    clear:both;
+    margin-left:auto;
+    margin-right:auto;
 }

@@ -117,14 +117,18 @@
             <li><a href="#tabs-5">Contact us</a></li>
         </ul>
         <div id="tabs-1">
-            <!--<div id="question">-->
+                <%
+                    two_pics = !@answer_me.nil? && !@answer_me.photo.nil? && @answer_me.photo.file? && @answer_me.photo2.file?
+                %>
                 <% if @answer_me.nil? %>
                     No more questions for you to answer
                 <% else if @answer_me.photo.file?  %>
+                    <% if !two_pics %>
                     <div id="pics">
                         <%= image_tag(@answer_me.photo.url(:large)) unless !@answer_me.photo.file? %>
                         <%= image_tag(@answer_me.photo2.url(:large)) unless !@answer_me.photo2.file? %>
                     </div>
+                    <% end %>
                 <% end
                     h1_class = @answer_me.photo.file? ? "pic_question" : "text_question";
                 %>
@@ -134,20 +138,32 @@
                     <div id="vote_buttons">
                         <%= form_tag "/polls/vote" do %>
                             <%= hidden_field_tag 'id', @answer_me.id %>
-                            <%= submit_tag "YES", :id => "yes_button" %>
-                            <span id="or">or</span>
-                            <%= submit_tag "NO", :id => "no_button" %>
+                            <% if two_pics %>
+                                <% content_tag :button, :type => :submit, :value => "YES", :name => "commit" do%>
+                                    <% image_tag @answer_me.photo.url(:large) %>
+                                <% end %>
+                                <span id="or">or</span>
+                                <% content_tag :button, :type => :submit, :value => "NO", :name => "commit" do %>
+                                    <%= image_tag @answer_me.photo2.url(:large) %>
+                                <% end %>
+                            <% else %>
+                                <%= submit_tag "YES", :id => "yes_button" %>
+                                <span id="or">or</span>
+                                <%= submit_tag "NO", :id => "no_button" %>
+                            <% end %>
                         <% end %>
                     </div>
 
-                    <% unless flash[:just_voted].nil? %>
-                    <br>
-                        <%= render :partial => "answered_poll", :locals => {:poll => flash[:just_voted]} %>
-                        <a id="already_voted_link" href="already_voted">See all the polls I voted on.</a>
-                    <% end %>
                 <% end %>
-            <!--</div>-->
         </div>
+
+        
+        <% unless flash[:just_voted].nil? %>
+        <br>
+        <%= render :partial => "answered_poll", :locals => {:poll => flash[:just_voted]} %>
+        <a id="already_voted_link" href="already_voted">See all the polls I voted on.</a>
+        <% end %>
+
 
         <div id="tabs-2">
             <div id="new_poll">
