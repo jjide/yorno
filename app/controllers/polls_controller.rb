@@ -10,7 +10,6 @@ class PollsController < ApplicationController
     end
 		
 		@poll.save
-		cookies[:max_id] = {:value => @poll.id, :expires => Time.now + 2.months}
     flash[:just_voted] = @poll
 
 		respond_to do |format|
@@ -35,35 +34,28 @@ class PollsController < ApplicationController
   # GET /polls/1.xml
   def show
     prepare_for_application_html
-    @selected_tab = -1
-    @poll = Poll.find params[:id]
-    @category = Category.find @poll.category_id
+    @selected_tab =0 
+    @answer_me = Poll.find params[:id]
+    @category = Category.find @answer_me.category_id
 
     respond_to do |format|
       format.html # show.html.erb
-      format.xml { render :xml => @poll }
+      format.xml { render :xml => @answer_me }
     end
   end
 
 
-  def already_voted
-    prepare_for_application_html
-    @selected_tab = -1
-
-    @polls = Poll.where("id <= ?", get_max_id).order("id asc")
-  end
-
 	# GET /polls/admin
-	def admin
-    max_id = get_max_id()
-		
-		@answer_me = Poll.where("id > ?", max_id).first
-		@polls = Poll.order("id asc").all
-
-		respond_to do |format|
-			format.html # index.html.erb
-		end
-	end
+#	def admin
+#    max_id = get_max_id()
+#
+#		@answer_me = Poll.where("id > ?", max_id).first
+#		@polls = Poll.order("id asc").all
+#
+#		respond_to do |format|
+#			format.html # index.html.erb
+#		end
+#	end
 
 #	# GET /polls/new
 #	# GET /polls/new.xml
@@ -133,19 +125,12 @@ class PollsController < ApplicationController
   def prepare_for_application_html
     @poll = Poll.new
     @categories = Category.all    
-    max_id = cookies[:max_id]
-    max_id = max_id.nil? ? 0 : Integer(max_id)
 
-    @answer_me = Poll.where("id > ?", max_id).order("id asc").first
+    @answer_me = Poll.first(:offset => (Poll.count * rand).to_i)
     if @answer_me
       @category = Category.find @answer_me.category_id
     end
 
   end
 
-  def get_max_id
-    max_id = cookies[:max_id]
-    max_id = max_id.nil? ? 0 : Integer(max_id)
-    max_id
-  end
 end
