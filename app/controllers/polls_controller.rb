@@ -12,8 +12,11 @@ class PollsController < ApplicationController
 		@poll.save
     flash[:just_voted] = @poll
 
+    random_poll      = Poll.first(:offset => (Poll.count * rand).to_i)
+    random_poll_url = "#{polls_url}/#{random_poll.id}"
+
 		respond_to do |format|
-			format.html { redirect_to(polls_url, :notice => 'Thank you for voting.') }
+			format.html { redirect_to(random_poll_url, :notice => 'Thank you for voting.') }
     end
 	end
 
