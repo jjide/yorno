@@ -103,14 +103,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  appraisal
-  aws-s3
-  heroku
-  mocha
+  appraisal (= 0.1)
+  aws-s3 (= 0.6.2)
+  heroku (= 1.10.14)
+  mocha (= 0.9.10)
   rails (= 3.0.0)
-  rake
-  remotipart
-  rmagick
-  shoulda
-  sqlite3-ruby
-  taps
+  rake (= 0.8.7)
+  remotipart (= 0.2.0)
+  rmagick (= 2.13.1)
+  shoulda (= 2.11.3)
+  sqlite3-ruby (= 1.3.1)
+  taps (= 0.3.14)

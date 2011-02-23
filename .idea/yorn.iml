@@ -12,7 +12,7 @@
   <component name="GemRequirementsHolder" version="3">
     <requirement>
       <requirement>
-        <dependency name="appraisal" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+        <dependency name="appraisal" version="0.1" bound="EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
     </requirement>
@@ -24,13 +24,13 @@
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="heroku" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+        <dependency name="heroku" version="1.10.14" bound="EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="mocha" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+        <dependency name="mocha" version="0.9.10" bound="EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
     </requirement>
@@ -42,25 +42,25 @@
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="rake" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+        <dependency name="rake" version="0.8.7" bound="EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="remotipart" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+        <dependency name="remotipart" version="0.2.0" bound="EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="rmagick" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+        <dependency name="rmagick" version="2.13.1" bound="EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="shoulda" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+        <dependency name="shoulda" version="2.11.3" bound="EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
     </requirement>
@@ -72,7 +72,7 @@
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="taps" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+        <dependency name="taps" version="0.3.14" bound="EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
     </requirement>
@@ -126,6 +126,14 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] taps (v0.3.14, /Users/rfzabick/.rvm/gems/ruby-1.9.2-p0@rails300/gems/taps-0.3.14)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] sequel (v3.17.0, /Users/rfzabick/.rvm/gems/ruby-1.9.2-p0@rails300/gems/sequel-3.17.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] sinatra (v1.0, /Users/rfzabick/.rvm/gems/ruby-1.9.2-p0@rails300/gems/sinatra-1.0)" level="application" />
+    <orderEntry type="library" name="[gem] tzinfo (v0.3.24, null)" level="application" />
+    <orderEntry type="library" name="[gem] treetop (v1.4.9, null)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] bundler (v1.0.10, /Users/rfzabick/.rvm/gems/ruby-1.9.2-p0@rails300/gems/bundler-1.0.10)" level="application" />
+    <orderEntry type="library" name="[gem] mail (v2.2.15, null)" level="application" />
+    <orderEntry type="library" name="[gem] rack-test (v0.5.7, null)" level="application" />
+    <orderEntry type="library" name="[gem] sqlite3-ruby (v1.3.3, null)" level="application" />
+    <orderEntry type="library" name="[gem] sqlite3 (v1.3.3, null)" level="application" />
+    <orderEntry type="library" name="[gem] xml-simple (v1.0.14, null)" level="application" />
   </component>
 </module>
 
