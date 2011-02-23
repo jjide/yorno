@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8c1b7ad2-334e-41a4-a4b9-e8ddb56984cb" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/javascripts/jquery-ui-1.8.6.custom.min.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/yorn.iml" afterPath="$PROJECT_DIR$/.idea/yorn.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
     </list>
     <ignored path="yorn.iws" />
@@ -78,7 +75,7 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="156" column="288" selection-start="6527" selection-end="6527" vertical-scroll-proportion="0.76233184">
+            <state line="156" column="133" selection-start="6372" selection-end="6372" vertical-scroll-proportion="0.62780267">
               <folding />
             </state>
           </provider>
@@ -710,7 +707,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="156" column="288" selection-start="6527" selection-end="6527" vertical-scroll-proportion="0.76233184">
+        <state line="156" column="133" selection-start="6372" selection-end="6372" vertical-scroll-proportion="0.62780267">
           <folding />
         </state>
       </provider>
