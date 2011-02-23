@@ -12,7 +12,7 @@ gem "rmagick", "2.13.1"
 gem "heroku", "1.10.14"
 gem "remotipart", "0.2.0"
 gem "taps", "0.3.14"
-
+gem "wirble"
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
