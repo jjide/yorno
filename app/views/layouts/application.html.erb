@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Yes or No?</title>
+    <title><%= @answer_me.question unless @answer_me.nil? %></title>
     <%= stylesheet_link_tag :all %>
     <%= javascript_include_tag :all %>
     <%= csrf_meta_tag %>
+    <meta property="og:title" content="<%=@answer_me.question unless @answer_me.nil?%>"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="http://www.theyesorno.com/polls/<%=@answer_me.id%>/"/>
+    <meta property="og:image" content="http://theyesorno.com/images/logo.png"/>
+
     <script>
         $(document).ready(function() {
             $("a.vote_button").click(function(event) {
@@ -51,6 +56,8 @@
 
         $('#pictures').change(picturesChanged);
         $('#poll_question').keyup(questionChanged);
+        $("#facebook").hide();
+        $('#like').hover(function(){$("#facebook").show();}, function() {$("#facebook").hide();});
         });
 
         function questionChanged(){
@@ -152,13 +159,18 @@
                                 <%= submit_tag "NO", :id => "no_button" %>
                             <% end %>
                         <% end %>
-                      <!--<div id="facebook" class="ui-corner-all">-->
-                        <!--Like this question? Share it on facebook!-->
-                        <!--<iframe src="http://www.facebook.com/plugins/like.php?href=http://www.theyesorno.com/polls/<%=@answer_me.id%>&action=like" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>-->
+                    </div>
                 <% end %>
+
         </div>
 
-        
+        <div id="like" class="ui-corner-all">
+          Like this question? Share it on facebook!
+            <span id="facebook">
+              <iframe src="http://www.facebook.com/plugins/like.php?href=http://www.theyesorno.com/polls/<%=@answer_me.id%>&action=like" scrolling="no" frameborder="0" style="border:none; width:600px; height:65px;" allowTransparency="true"></iframe>
+            </span>
+        </div>
+
         <% unless flash[:just_voted].nil? %>
         <br>
         <%= render :partial => "answered_poll", :locals => {:poll => flash[:just_voted]} %>
