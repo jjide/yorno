@@ -162,19 +162,21 @@
                     </div>
                 <% end %>
 
-        </div>
-
-        <div id="like" class="ui-corner-all">
-          Like this question? Share it on facebook!
+          <div id="like" class="ui-corner-all">
+            Like this question? Share it on facebook!
             <span id="facebook">
               <iframe src="http://www.facebook.com/plugins/like.php?href=http://www.theyesorno.com/polls/<%=@answer_me.id%>&action=like" scrolling="no" frameborder="0" style="border:none; width:600px; height:65px;" allowTransparency="true"></iframe>
             </span>
+          </div>
+
+          <% unless flash[:just_voted].nil? %>
+              <br>
+              <%= render :partial => "answered_poll", :locals => {:poll => flash[:just_voted]} %>
+          <% end %>
+          
         </div>
 
-        <% unless flash[:just_voted].nil? %>
-        <br>
-        <%= render :partial => "answered_poll", :locals => {:poll => flash[:just_voted]} %>
-        <% end %>
+
 
 
         <div id="tabs-2">
@@ -198,7 +200,7 @@
                     <% end %>
 
                     <div class="field">
-                        <%= f.label :question %>
+                        Have a question? We'll get you an answer.
                         <br/>
                         <%= f.text_area :question %>
                         <div id="counter">0/140</div>

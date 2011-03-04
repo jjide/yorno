@@ -223,8 +223,8 @@ h1.pic_question {
 }
 
 h1.text_question {
-    min-height: 450px;
-    max-height: 450px;
+    min-height: 425px;
+    max-height: 425px;
 }
 
 .question {
