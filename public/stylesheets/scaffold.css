@@ -236,9 +236,11 @@ h1.text_question {
 }
 
 #facebook {
+}
+
+#like {
     background: #fefefe;
-    display: block;
-    text-align:center;
+    text-align:left;
     width:50%;
 }
 
