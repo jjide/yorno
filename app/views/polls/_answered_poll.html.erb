@@ -1,19 +1,22 @@
+<% puts "Starting the already voted .erb" %>
+<% puts "poll is #{poll}" %>
         <span class="question">
           <%= poll.question %>
           &mdash;
+<% puts "about to find category #{poll.category}" %>
           <%= Category.find(poll.category_id).name %>
         </span>
         <div>
             <%= image_tag(poll.photo.url(:large)) unless !poll.photo.file? %>
             <%= image_tag(poll.photo2.url(:large)) unless !poll.photo2.file? %>
         </div>
-
+<% puts "just did image tags, about to start on percentages with #{total} votes" %>
         <div class="percentages">
           <% total = poll.yeses + poll.nos %>
           <% if total > 0 %>
               <% yes_percentage = (poll.yeses * 100.0) / (total * 1.0)
                  no_percentage = (poll.nos * 100.0) / (total * 1.0) %>
-
+<% puts "yes: #{yes_percentage}, no: #{no_percentage}" %>
               <table cellpadding="0" cellspacing="0">
                 <tr>
                   <td class="percentage_number">
