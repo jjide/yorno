@@ -10,9 +10,9 @@
             <%= image_tag(poll.photo.url(:large)) unless !poll.photo.file? %>
             <%= image_tag(poll.photo2.url(:large)) unless !poll.photo2.file? %>
         </div>
-<% puts "just did image tags, about to start on percentages with #{total} votes" %>
         <div class="percentages">
           <% total = poll.yeses + poll.nos %>
+          <% puts "just did image tags, about to start on percentages with #{total} votes" %>
           <% if total > 0 %>
               <% yes_percentage = (poll.yeses * 100.0) / (total * 1.0)
                  no_percentage = (poll.nos * 100.0) / (total * 1.0) %>
