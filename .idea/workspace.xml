@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8c1b7ad2-334e-41a4-a4b9-e8ddb56984cb" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/javascripts/jquery-ui-1.8.6.custom.min.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/polls/_answered_poll.html.erb" afterPath="$PROJECT_DIR$/app/views/polls/_answered_poll.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/session_store.rb" afterPath="$PROJECT_DIR$/config/initializers/session_store.rb" />
     </list>
     <ignored path="yorn.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,15 +27,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="404.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/404.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -57,7 +48,7 @@
       <file leaf-file-name="_answered_poll.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/polls/_answered_poll.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="639" selection-end="639" vertical-scroll-proportion="0.26448363">
+            <state line="1" column="0" selection-start="45" selection-end="45" vertical-scroll-proportion="0.026378896">
               <folding />
             </state>
           </provider>
@@ -150,7 +141,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/config/initializers/image_magick_for_development.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20110112011329_add_second_photo_column_to_poll.rb" />
@@ -166,6 +156,7 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/scaffold.css" />
         <option value="$PROJECT_DIR$/app/views/polls/_answered_poll.html.erb" />
+        <option value="$PROJECT_DIR$/config/initializers/session_store.rb" />
       </list>
     </option>
   </component>
@@ -638,11 +629,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/poll.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.2-p0@rails300/gems/activerecord-3.0.0/lib/active_record/base.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="407" column="0" selection-start="19603" selection-end="19603" vertical-scroll-proportion="0.02446982" />
@@ -721,9 +707,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/session_store.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="1" selection-start="62" selection-end="62" vertical-scroll-proportion="0.06912442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/polls/_answered_poll.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="639" selection-end="639" vertical-scroll-proportion="0.26448363">
+        <state line="1" column="0" selection-start="45" selection-end="45" vertical-scroll-proportion="0.026378896">
           <folding />
         </state>
       </provider>
