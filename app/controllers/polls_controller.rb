@@ -10,7 +10,13 @@ class PollsController < ApplicationController
     end
 		
 		@poll.save
-    flash[:just_voted] = @poll
+    flash[:question] = @poll.question
+    flash[:category_id] = @poll.category_id
+    flash[:photo_1_url] = @poll.photo.url(:large).ends_with?("missing.png") ? nil :  @poll.photo.url(:large)
+    flash[:photo_2_url] = @poll.photo2.url(:large).ends_with?("missing.png") ? nil : @poll.photo2.url(:large)
+    flash[:yeses] = @poll.yeses
+    flash[:nos] = @poll.nos
+
 
     random_poll      = Poll.first(:offset => (Poll.count * rand).to_i)
     random_poll_url = "#{polls_url}/#{random_poll.id}"

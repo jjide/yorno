@@ -162,18 +162,19 @@
                 <% end %>
 
           <div id="like" class="ui-corner-all">
-            <!--<a href="http://twitter.com/share" class="twitter-share-button" data-count="none" >Tweet</a>-->
-            <!--<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>-->
+            <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" >Tweet</a>
+            <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 
-            <!--<span id="facebook">-->
-              <!--<iframe src="http://www.facebook.com/plugins/like.php?href=http://www.theyesorno.com/polls/<%=@answer_me.id%>&action=like" scrolling="no" frameborder="0" style="border:none; width:600px; height:65px;" allowTransparency="true"></iframe>-->
-            <!--</span>-->
+            <span id="facebook">
+              <iframe src="http://www.facebook.com/plugins/like.php?href=http://www.theyesorno.com/polls/<%=@answer_me.id%>&action=like" scrolling="no" frameborder="0" style="border:none; width:600px; height:65px;" allowTransparency="true"></iframe>
+            </span>
 
           </div>
 
-          <% unless flash[:just_voted].nil? %>
+          <% unless flash[:question].nil? %>
               <br>
-              <%= render :partial => "answered_poll", :locals => {:poll => flash[:just_voted]} %>
+              <%= render :partial => "answered_poll", :locals => {:question => flash[:question], :category_id => flash[:category_id], :photo_1_url => flash[:photo_1_url], :photo_2_url => flash[:photo_2_url], :yeses => flash[:yeses], :nos => flash[:nos] } %>
+              <% flash.discard %>
           <% end %>
           
         </div>
