@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8c1b7ad2-334e-41a4-a4b9-e8ddb56984cb" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/javascripts/jquery-ui-1.8.6.custom.min.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/jquery-ui-1.8.6.custom.css" afterPath="$PROJECT_DIR$/public/stylesheets/jquery-ui-1.8.6.custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/yes_or_no.html" afterPath="$PROJECT_DIR$/public/yes_or_no.html" />
     </list>
     <ignored path="yorn.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -113,10 +113,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="jquery-ui-1.8.6.custom.css" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="jquery-ui-1.8.6.custom.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/stylesheets/jquery-ui-1.8.6.custom.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="61" column="67" selection-start="3445" selection-end="3445" vertical-scroll-proportion="0.33333334">
+                <state line="53" column="0" selection-start="3062" selection-end="3062" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="yes_or_no.html" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/public/yes_or_no.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="10" column="0" selection-start="638" selection-end="638" vertical-scroll-proportion="0.4716981">
                   <folding />
                 </state>
               </provider>
@@ -751,13 +760,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.2-p0@rails300/gems/actionpack-3.0.5/lib/action_controller/metal/flash.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.2-p0@rails300/gems/actionpack-3.0.5/lib/action_dispatch/middleware/session/cookie_store.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="0" selection-start="2262" selection-end="2262" vertical-scroll-proportion="0.0">
@@ -858,7 +860,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/jquery-ui-1.8.6.custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="67" selection-start="3445" selection-end="3445" vertical-scroll-proportion="0.33333334">
+        <state line="53" column="0" selection-start="3062" selection-end="3062" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/yes_or_no.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="638" selection-end="638" vertical-scroll-proportion="0.4716981">
           <folding />
         </state>
       </provider>
