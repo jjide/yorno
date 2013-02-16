@@ -1,9 +1,16 @@
 Yorno::Application.routes.draw do
+  resources :questions
+
+
+  devise_for :users
+
   root :to => 'pages#home'
   
   get 'about' => "pages#about"
   get 'question' => "pages#question"
   get 'ask' => "pages#ask"
+  
+  match '/answer/:id' => 'questions#answer'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

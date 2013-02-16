@@ -1,2 +1,11 @@
-<h1>Pages#question</h1>
-<p>Find me in app/views/pages/question.html.erb</p>
+<h1>All Questions</h1>
+
+<% @questions.each do |question| %>
+<td>  
+<tr>
+    <td><%= question.question_text %></td>
+    <td><%= question.question_ans %></td>
+    <td><%= link_to 'answer', question#answer %></td>
+  </tr>
+</td>
+<% end %>

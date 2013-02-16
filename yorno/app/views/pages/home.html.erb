@@ -1,2 +1,16 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+	
+<% if user_signed_in? %>
+	<% if @questions != nil %>
+		<%= render '/questions/index' %>
+	<% else %>
+		<p>you have no questions - Please add one below</p>
+		<%= link_to 'questions/new'%>
+	<% end %>
+	
+			
+<% else %>
+	<h1>Welcome to YERNO</h1>
+	<p>Answer some questions please or Sign up to ask a question</p>
+	<%= link_to 'Sign Up', new_user_registration_path, class:"btn btn-primary" %>
+
+<% end %>

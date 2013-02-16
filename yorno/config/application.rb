@@ -58,5 +58,9 @@ module Yorno
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    
+    #Used for Devise to not precompile DB for Heroku - Remove if not in Heroku
+    config.assets.initialize_on_precompile = false
+    
   end
 end
