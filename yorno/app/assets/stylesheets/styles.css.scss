@@ -1,0 +1,18 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$baseFontFamily: 'Open Sans';
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+$btnPrimaryBackground: orange;
+$linkColor: #A17202;
+
+@import 'bootstrap';
+
+
+@import 'bootstrap-responsive';
+
+.header, .footer{
+	background-color:#e3e3e3;
+}

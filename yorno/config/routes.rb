@@ -1,4 +1,10 @@
 Yorno::Application.routes.draw do
+  root :to => 'pages#home'
+  
+  get 'about' => "pages#about"
+  get 'question' => "pages#question"
+  get 'ask' => "pages#ask"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
