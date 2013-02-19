@@ -55,16 +55,15 @@ class PollsController < ApplicationController
 
 
 	# GET /polls/admin
-#	def admin
-#    max_id = get_max_id()
-#
-#		@answer_me = Poll.where("id > ?", max_id).first
-#		@polls = Poll.order("id asc").all
-#
-#		respond_to do |format|
-#			format.html # index.html.erb
-#		end
-#	end
+	def admin
+		@answer_me = Poll.where("id > 100").first
+    @category = Category.find @answer_me.category_id
+		@polls = Poll.order("id asc").all
+
+		respond_to do |format|
+			format.html # index.html.erb
+		end
+	end
 
 #	# GET /polls/new
 #	# GET /polls/new.xml

@@ -13,6 +13,7 @@ Yorn::Application.routes.draw do
   # This route can be invoked with purchase_url(:id => product.id)
   #trying to get voting to work
    match 'polls/vote' => 'polls#vote', :as => :vote
+   match 'polls-admin' => 'polls#admin', :as => :admin
    match 'upload' => 'polls#upload', :as => :upload
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
