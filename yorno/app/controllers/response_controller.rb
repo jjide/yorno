@@ -16,7 +16,7 @@ class ResponseController < ApplicationController
       @response.save
 
       respond_to do |format|
-        format.html { redirect_to question_path, notice: 'You have voted YES'  }
+        format.html { redirect_to question_path, notice: 'You have voted YES yay'  }
         format.json { head :no_content }
       end    
     
