@@ -1,4 +1,10 @@
 Yorno::Application.routes.draw do
+  get "response/yes"
+
+  get "response/no"
+
+  get "response/count"
+
   resources :questions
 
 
@@ -11,6 +17,13 @@ Yorno::Application.routes.draw do
   get 'ask' => "pages#ask"
   
   match '/answer/:id' => 'questions#answer'
+  
+  ####response routes####
+  get 'yes/:id' => 'response#yes', :as => :yes
+  get 'no/:id' => 'response#no', :as => :no
+  #get 'yes/:id' => "response#yes"
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -11,7 +11,7 @@
 
 <% @questions.each do |question| %>
   <tr>
-    <td><%= question.question_text %></td>
+    <td><%= link_to question.question_text, question_path(question) %></td>
     <td><%= question.question_ans %></td>
    <!-- <td><%= link_to 'Show', question %></td> -->
     <td><%= link_to 'Edit', edit_question_path(question) %></td>

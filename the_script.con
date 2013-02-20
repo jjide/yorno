@@ -1,5 +1,0 @@
-
-p = Poll.new
-p.question = "does scripting work?"
-p.save
-p.id
