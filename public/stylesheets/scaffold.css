@@ -1,0 +1,246 @@
+body {
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+}
+
+body, p, ol, ul, td {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+}
+
+pre {
+    background-color: #eee;
+    padding: 10px;
+    font-size: 11px;
+}
+
+a.ui-state-default {
+    color: #666;
+}
+
+a:visited {
+    color: #666;
+}
+
+div.field, div.actions {
+    margin-bottom: 10px;
+}
+
+#notice {
+    color: green;
+}
+
+.field_with_errors {
+    padding: 2px;
+    background-color: red;
+    display: table;
+}
+
+#error_explanation {
+    width: 450px;
+    border: 2px solid red;
+    padding: 7px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+}
+
+#error_explanation ul li {
+    font-size: 12px;
+    list-style: square;
+}
+
+.hideMe {
+    display: none;
+}
+
+#newDiv textarea {
+    width: 400px;
+    height: 120px;
+    border: 3px solid #cccccc;
+    padding: 5px;
+    font-family: Tahoma, sans-serif;
+}
+
+h1 {
+    line-height: 1.1em;
+}
+
+.percentages {
+    text-align: center;
+}
+
+.percentages table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.yes_percentage_number {
+    float: left;
+}
+
+.no_percentage_number {
+    float: right;
+}
+
+.total {
+    text-align: center;
+}
+
+table {
+}
+
+#answered li {
+    margin-bottom: 3em;
+    width: 400px;
+}
+
+td.no_background {
+    width: 385px;
+    background-color: red;
+    margin: 0;
+    padding: 0;
+    height: 36px;
+}
+
+td.no_background div {
+    background-color: green;
+    color: white;
+    height: 100%;
+}
+
+.percentage_number {
+    width: 8em;
+}
+
+.yes_number {
+    color: green;
+    font-weight: bold;
+    text-align: right;
+}
+
+.no_number {
+    color: red;
+    font-weight: bold;
+    text-align: left;
+}
+
+div#header {
+    width: 100%;
+    text-align: left;
+    border-bottom: solid 8px black;
+    padding: 0 0 0 42px;
+    background: #ffffff url(/images/logo.png) no-repeat left top;
+    height: 42px;
+}
+
+div#header a {
+    position: relative;
+    bottom: -1.3em;
+}
+
+div.container_12 {
+    margin-top: 10px;
+}
+
+body {
+    background: #000 url(/images/gradient.png) 100% top repeat-x;;
+}
+
+div#tabs {
+    background: #fefefe;
+    display: block;
+    text-align:center;
+}
+
+#or {
+    margin: 2em;
+    height: 75px;
+}
+
+#ads_go_here {
+    background-color: white;
+    border: solid 2px silver;
+}
+
+.bio_name {
+    font-weight: bold;
+}
+
+#question img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2, h1 {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#pics {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-height:400px;
+    min-height:400px;
+}
+
+div#tabs-1 {
+    min-height: 550px;
+    max-height: 550px;
+    text-align: center;
+    clear:both;
+}
+
+div#vote_buttons {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#tabs-1 h1 {
+}
+
+h1.pic_question {
+    font-size: 1em;
+    min-height: 50px;
+    max-height: 50px;
+}
+
+h1.text_question {
+    min-height: 425px;
+    max-height: 425px;
+}
+
+.question {
+    color:gray;
+    margin-top:10px;
+    clear:both;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#facebook {
+}
+
+#like {
+    background: #fefefe;
+    text-align:left;
+    width:50%;
+}
+

@@ -1,0 +1,37 @@
+<html>
+<head>
+    <link href="/stylesheets/jquery-ui-1.8.6.custom.css?1290046885" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="/stylesheets/scaffold.css?1290054698" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="/stylesheets/text.css?1290054107" media="screen" rel="stylesheet" type="text/css"/>
+    <script src="/javascripts/jquery.js?1288723824" type="text/javascript"></script>
+    <script src="/javascripts/rails.js?1288698850" type="text/javascript"></script>
+    <script src="/javascripts/application.js?1284925036" type="text/javascript"></script>
+
+    <script src="/javascripts/jquery-ui-1.8.7.custom.min.js?1294789524" type="text/javascript"></script>
+    <script src="/javascripts/jquery.form.js?1294513926" type="text/javascript"></script>
+    <script src="/javascripts/jquery.remotipart.js?1294515756" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#yes_button").button();
+            alert('hello?');
+            $("#tabs").tabs({ selected: -1});
+        });
+    </script>
+</head>
+<body>
+<div id="tabs">
+    <ul>
+        <li><a id="vote_link" href="#tabs-1">Vote</a></li>
+        <li><a href="#tabs-2">Ask</a></li>
+    </ul>
+    <div id="tabs-1">
+        <form action="foo">
+            <input id="yes_button" name="commit" type="submit" value="YES"/>
+        </form>
+    </div>
+    <div id="tabs-2">
+        blah blah blah
+    </div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<%= remotipart_response do %>
+$("#new_poll").html('You just created a new poll! To follow the voting on your poll, go to <a href="/polls/<%=flash[:new_id]%>">http://www.theyesorno.com/polls/<%=flash[:new_id]%></a>.  <div id="like" class="ui-corner-all"> Want to get your friends to answer this question? Share it on facebook! <span id="facebook"> <iframe src="http://www.facebook.com/plugins/like.php?href=http://www.theyesorno.com/polls/<%=flash[:new_id]%>&action=like" scrolling="no" frameborder="0" style="border:none; width:600px; height:65px;" allowTransparency="true"></iframe> </span> </div>');
+$("#poll_question").focus();
+$("#new_poll_form")[0].reset();
+$("div#new_poll").effect("highlight", {}, 3000);
+<% flash.discard() %>
+<% end %>
+
