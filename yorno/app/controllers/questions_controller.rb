@@ -26,7 +26,7 @@ class QuestionsController < ApplicationController
   # GET /questions/new
   # GET /questions/new.json
   def new
-    @question = Question.new
+    @question = current_user.questions.new
     
 
     respond_to do |format|
@@ -50,6 +50,7 @@ class QuestionsController < ApplicationController
   def create
     @question = Question.new(params[:question])
     
+    @question.user_id = current_user.id
     #Create responses for question
     @response = Response.new(params[:response])
     

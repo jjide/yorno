@@ -9,11 +9,17 @@
 <body>
 
 <%= render 'layouts/header' %>
+<div class="container">
 	<% flash.each do |name, msg| %>
 		<%= content_tag(:div, msg, class: "alert alert-#{name}") %>
 	<% end %>
 	
-<%= yield %>
+	<%= yield %>
+</div> <!-- close body container -->
+
+<div id="push"></div>
+
+</div> <!-- closed the wrap -->
 
 <%= render 'layouts/footer' %>
 

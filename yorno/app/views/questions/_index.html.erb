@@ -1,25 +1,30 @@
 <h1>Listing questions</h1>
 
-<table>
+<table class="table table-striped">
   <tr>
-    <th>Question text</th>
-    <th>Question ans</th>
+    <th>Questions</th>
+    <!-- <th>Answers</th> -->
     <!-- <th></th> -->
-    <th></th>
-    <th></th>
+   
   </tr>
 
 <% @questions.each do |question| %>
+<% if question.user_id == current_user.id %>
   <tr>
     <td><%= link_to question.question_text, question_path(question) %></td>
-    <td><%= question.question_ans %></td>
+    
    <!-- <td><%= link_to 'Show', question %></td> -->
     <td><%= link_to 'Edit', edit_question_path(question) %></td>
     <td><%= link_to 'Delete', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
+<% else %>
+<tr>
+    <td><%= link_to question.question_text, question_path(question) %></td>
+</tr>
+<% end %>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Question', new_question_path %>
+<%= link_to 'Add a New Question', new_question_path, class:"btn btn-primary" %>

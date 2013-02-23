@@ -1,15 +1,26 @@
-<div class="header">
-	<p>THIS IS THE HEADER</p>
-	<p>Find me in views/layouts/_header.html.erb</p>
-</div>
+<div id="wrap">
+	<div class="navbar navbar-fixed-top header" >
 
-<div class="nav">
-	<%= link_to 'About', about_path %>
-	<% if user_signed_in? %>
-		<%= link_to 'Logout', destroy_user_session_path, method: :delete %>
-		<%= link_to 'Edit Profile', edit_user_registration_path %>
-	<% else %>
-		<%= link_to 'Login', new_user_session_path %>
-	<% end %>
-	
-</div>
+			<div class="container" >
+				
+				<ul class=" nav pull-right">
+				<li><%= link_to 'About', about_path %></li>
+				<% if user_signed_in? %>
+					<li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
+					<li><%= link_to 'Edit Profile', edit_user_registration_path %></li>
+					<% else %>
+					<li><%= link_to 'Login', new_user_session_path %></li>
+				<% end %>
+				</ul>
+				<div class="logo pull-left">
+				<strong><p><%= link_to 'Yeno', root_path %></p></strong>
+				</div>
+				
+
+				
+
+				<p class="muted">Simple Yes or No Answers</p>
+			</div><!-- end container -->
+
+	</div><!--end of navbar-fixed-top -->
+

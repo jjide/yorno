@@ -1,34 +1,44 @@
 <!-- <p id="notice"><%= notice %></p> -->
+<div class="jumbotron">
+	<p>
+  		<b>Question:</b>
+  		<%= @question.question_text %>
+	</p>
+</div><!-- close jumbotron -->
 
-<p>
-  <b>Question text:</b>
-  <%= @question.question_text %>
-</p>
+<div class="usericon">
+	<p>User Icon</p>
+</div>
 
-<p>
 
  <%= simple_form_for(@question, :html => {:class => 'form-horizontal' }) do |f| %>
   <%= f.error_notification %>
 
-  <div class="form-inputs">
-   
+  <div class="form-inputs yeno">
+ 
 <%= link_to "YES", yes_path(@question), :method => "get", class:"btn btn-success btn-large" %>
+
 <%= link_to "NO", no_path(@question), :method => "get", class:"btn btn-danger btn-large" %>
   </div>
 
 
 
 <% end %>
+<div class="yeno">
+	Yes: <%= @response.yes %>
+	No: <%= @response.no %>
 
-Yes: <%= @response.yes %>
-No: <%= @response.no %>
-</p>
 
 
+
+<p>
 <% if user_signed_in? %>
 
 <%= link_to 'Edit', edit_question_path(@question) %> |
 
 <% end %>
 
-<%= link_to 'Back', questions_path %>
+<%= link_to 'Back', question_path %>
+</p>
+
+</div>
