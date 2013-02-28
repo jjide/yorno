@@ -3,6 +3,8 @@ class QuestionsController < ApplicationController
   # GET /questions.json
   def index
     @questions = Question.all
+    @response = Response.all
+
 
     respond_to do |format|
       format.html # index.html.erb
@@ -55,7 +57,7 @@ class QuestionsController < ApplicationController
     @response = Response.new(params[:response])
     
     @response.yes = 0
-    @response.no = 0
+    @response.no = 1
     
     @response.save
     

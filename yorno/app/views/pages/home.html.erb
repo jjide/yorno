@@ -14,6 +14,11 @@
 	<p>Answer some questions or Sign up to ask a question</p>
 	<%= link_to 'Sign Up', new_user_registration_path, class:"btn btn-primary btn-large" %>
 </div>
+<% if user_signed_in? %>
+<%= render '/questions/index' %>
+<% else %>
+<%= render '/pages/question' %>
+<% end %>
 <% end %>
 
 

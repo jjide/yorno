@@ -1,0 +1,22 @@
+<h1>All Questions</h1>
+
+<table class="table table-striped">
+  <tr>
+    <th>Questions</th>
+    <!-- <th>Answers</th> -->
+    <!-- <th></th> -->
+   
+  </tr>
+
+<% @questions.each do |question| %>
+  
+	<tr>
+    	<td><%= link_to question.question_text, question_path(question) %></td>
+    
+   		<!-- <td><%= link_to 'Show', question %></td> 
+    	<td><%= link_to 'Edit', edit_question_path(question) %></td>
+    	<td><%= link_to 'Delete', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+  	</tr>
+
+<% end %>
+</table>
